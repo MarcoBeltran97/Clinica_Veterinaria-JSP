@@ -14,6 +14,14 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link href="Css/StyleIndex.css" rel="stylesheet" type="text/css"/>
     </head>
+    <%  String rspta="";
+        if(request.getParameter("rspta")!=null){
+            int r=Integer.parseInt(request.getParameter("rspta"));
+            if(r==0){
+                rspta="Error: datos incorrectos";
+            }
+        }
+    %>
     <body>
      <!DOCTYPE html>
     <!--HEADER HUELLITAS-->
@@ -95,7 +103,7 @@
                                 <img class="huellitas" src="img/logo_formularios.png" alt="" height="150px" width="200px">
                             </div>
                             <br>
-                            <form action="" class="">
+                            <form method="post" action="/Veterinaria_Huellitas/LoginController" class="">
                                 <div class="mb-4">
                                     <label for="email" class="form-label">USUARIO</label>
                                     <input type="email" class="form-control" name="txt_Email">
@@ -125,6 +133,7 @@
                                         <a href="#"> Recuperar Password</a>
                                     </span>
                                 </div>
+                                <p style="color: red;"><%=rspta %></p>
                             </form>
 
                         </div>
