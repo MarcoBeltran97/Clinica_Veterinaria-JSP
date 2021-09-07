@@ -7,4 +7,4 @@ Actualizaciones
 Implementación de una pagina Web con JAVA JSP (JavaServer Pages) usando CSS y Bootstrap.
 
 2da. Dia 06/09/2021:
-Se implementa el Login con MySQL, se usará en 3 capas con MVC, usando Java Servlet.
+Se implementa el Login con MySQL, se usará en 3 capas con MVC, usando Java Servlet y la versión del connector es la 8.0.23
