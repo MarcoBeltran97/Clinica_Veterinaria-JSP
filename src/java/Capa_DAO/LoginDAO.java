@@ -10,7 +10,7 @@ public class LoginDAO {
     ResultSet rs=null;
     BD_Conexion cn=new BD_Conexion();
     public int validarLogin(Model_CLIENTES tm) throws Exception{
-        sql="SELECT COUNT(idCliente) AS cantidad FROM `TB_CLIENTE` WHERE email_cliente ='"+tm.getEmail()+"' AND contraseña_cliente ='"+tm.getContraseña()+"'";
+        sql="SELECT COUNT(idCliente) AS cantidad FROM `TB_CLIENTE` WHERE email_cliente ='"+tm.getEmail()+"' AND contraseña_cliente ='"+tm.getContrasena()+"'";
         rs=cn.ejecutarConsulta(sql);
         while(rs.next()){
             rspta=rs.getInt("cantidad");

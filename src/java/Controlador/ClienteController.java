@@ -1,19 +1,19 @@
 package Controlador;
 
-import Capa_DAO.LoginDAO;
+import Capa_DAO.ClienteDAO;
 import Capa_MODELO.Model_CLIENTES;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-@WebServlet(name = "LoginController", urlPatterns = {"/LoginController"})
-public class LoginController extends HttpServlet {
+@WebServlet(name = "ClienteController", urlPatterns = {"/ClienteController"})
+public class ClienteController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -27,27 +27,38 @@ public class LoginController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            Model_CLIENTES tm=new Model_CLIENTES();
-            LoginDAO lg=new LoginDAO();
-            int rspta=0;
-            if(request.getParameter("btn_login")!=null){
-            String usuario=request.getParameter("txt_Email");
-            String clave=request.getParameter("txt_password");
-            tm.setEmail(usuario);
-            tm.setContrasena(clave);
+        int rsptaCli = 0;
+        ClienteDAO cli = new ClienteDAO();
+        Model_CLIENTES rc = new Model_CLIENTES();
+        if (request.getParameter("btn_registrar") != null) {
+            String nombre = request.getParameter("txt_nombre");
+            String apellido = request.getParameter("txt_apellido");
+            String dni = request.getParameter("txt_dni");
+            String email = request.getParameter("txt_email");
+            String telefono = request.getParameter("txt_telefono");
+            String contrasena = request.getParameter("txt_contrasena");
+            String vsMensaje = "";
+
+            if (vsMensaje.isEmpty()) {
+                int indRegistro = 0;
+                Model_CLIENTES oEmpleado = new Model_CLIENTES(1, nombre, apellido, dni, email, telefono, contrasena);
                 try {
-                    rspta=lg.validarLogin(tm);
+                    int crearEmepleado = ClienteDAO.RegistrarCliente(nombre, apellido, dni, email, telefono, contrasena);
                 } catch (Exception ex) {
-                    Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
                 }
-              if(rspta!=0){
-                  response.sendRedirect("/Veterinaria_Huellitas/PetShop.jsp");
-              }else{
-                  response.sendRedirect("/Veterinaria_Huellitas/Index.jsp?rspta="+rspta);
-              } 
+                request.setAttribute("vsEmpleado", oEmpleado);
+                request.getRequestDispatcher("/Index.jsp").forward(request, response);
+
+            } else {
+                request.setAttribute("vsMensaje", vsMensaje);
+                request.getRequestDispatcher("ControllerCliente").forward(request, response);
             }
+
+        } else {
+
+            response.sendRedirect("Index.jsp");
+
         }
     }
 

@@ -7,19 +7,20 @@ public class Model_CLIENTES {
     private String dni;
     private String email;
     private String telefono;
-    private String contraseña;
+    private String contrasena;
+    public static int a_ESTADOINSERT;
 
     public Model_CLIENTES() {
     }
 
-    public Model_CLIENTES(int idCliente, String nombres, String apellidos, String dni, String email, String telefono, String contraseña) {
+    public Model_CLIENTES(int idCliente, String nombres, String apellidos, String dni, String email, String telefono, String contrasena) {
         this.idCliente = idCliente;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.dni = dni;
         this.email = email;
         this.telefono = telefono;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
     }
 
     public int getIdCliente() {
@@ -70,13 +71,20 @@ public class Model_CLIENTES {
         this.telefono = telefono;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
-    
+
+    public static int getA_ESTADOINSERT() {
+        return a_ESTADOINSERT;
+    }
+
+    public static void setA_ESTADOINSERT(int a_ESTADOINSERT) {
+        Model_CLIENTES.a_ESTADOINSERT = a_ESTADOINSERT;
+    }
     
 }
