@@ -34,7 +34,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-xl navbar-light border-5  border-bottom border-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="Index.jsp">
                     <img class="logo-empresa" src="img/Logo_principal.png" alt="">
                 </a>
                 <button class="navbar-toggler bg-success rounded-3" type="button" data-bs-toggle="collapse"
@@ -45,13 +45,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
                         <li class="nav-item">
-                            <a class="nav-link active p-5 text-white" aria-current="page" href="#nosotros">Nosotros</a>
+                            <a class="nav-link active p-5 text-white" aria-current="page" href="Nosotros.jsp">Nosotros</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link p-5" href="#">Servicios</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link p-5" href="../HTML/PetShop.html">Pet Shop</a>
+                            <a class="nav-link p-5" href="PetShop.jsp">Pet Shop</a>
                         </li>
                         <li class="nav-item dropdown  ">
                             <a class="nav-link dropdown-toggle p-5" href="#" id="navbarDropdown" role="button"
