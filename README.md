@@ -11,3 +11,6 @@ Se implementa el Login con MySQL, se usará en 3 capas con MVC, usando Java Serv
 
 3ra. Dia 14/09/2021:
 Se implementa el registro del Cliente usando Stored Procedure.
+
+4ta. Dia 19/09/2021:
+Implementación de la interfaz para el Carrito de Compras.
