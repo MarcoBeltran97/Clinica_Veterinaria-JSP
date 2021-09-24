@@ -16,4 +16,4 @@ Se implementa el registro del Cliente usando Stored Procedure.
 Implementación de la interfaz para el Carrito de Compras.
 
 5to. Dia 24/09/2021:
-Procedimientos Almacenados para el Producto, usando JQuery para editar mediante un Modal de Bootstrap.
+Procedimientos Almacenados para el Producto, usando JQuery para editar mediante un Modal de Bootstrap y JavaScript para algunas características interactivas.
