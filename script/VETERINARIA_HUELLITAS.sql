@@ -97,6 +97,17 @@ CREATE TABLE TB_SERVICIO (
   PRIMARY KEY (idServicio)
 );
 
+CREATE TABLE TB_PRODUCTO (
+	idProducto int NOT NULL AUTO_INCREMENT,
+    /*foto_producto mediumblob NOT NULL,*/
+    descripcion_producto text NOT NULL,
+    precio_producto decimal(18,2) NOT NULL,
+    cantidad_producto int NOT NULL,
+    precio_total decimal(18,2) NOT NULL,
+    idCliente int NOT NULL,
+    primary key (idProducto)
+);
+
 -- ---------------------------------------------------------------------
 -- Creación de llaves foráneas
 -- ---------------------------------------------------------------------
@@ -116,6 +127,9 @@ ALTER TABLE TB_HISTORIAL
   ADD FOREIGN KEY (idControlServicio) REFERENCES TB_CONTROL_SERVICIO (idControlServicio) ON UPDATE CASCADE;
 
 ALTER TABLE TB_MASCOTA
+  ADD FOREIGN KEY (idCliente) REFERENCES TB_CLIENTE (idCliente) ON UPDATE CASCADE;
+
+ALTER TABLE TB_PRODUCTO
   ADD FOREIGN KEY (idCliente) REFERENCES TB_CLIENTE (idCliente) ON UPDATE CASCADE;
 
 -- ---------------------------------------------------------------------

@@ -30,7 +30,7 @@ public class ClienteDAO {
                 System.out.println("se creo el empleado");
 
             } else {
-                System.out.println("no se creo el empleado");
+                System.out.println("No se creo el empleado");
             }
         } catch (SQLException e) {
             e.getMessage().toString();
