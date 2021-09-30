@@ -17,3 +17,6 @@ Implementación de la interfaz para el Carrito de Compras.
 
 5to. Dia 24/09/2021:
 Procedimientos Almacenados para el Producto, usando JQuery para editar mediante un Modal de Bootstrap y JavaScript para algunas características interactivas.
+
+6to. Dia 29/09/2021:
+Se agregan algunas validaciones para el producto según el cliente, y se agrega un nuevo formulario para el mantenimiento del Cliente.
