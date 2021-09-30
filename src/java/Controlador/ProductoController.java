@@ -39,13 +39,15 @@ public class ProductoController extends HttpServlet {
             if (request.getParameter("btn_comprar") != null) {
                 String descripcion = request.getParameter("txt_info");
                 double precio = Double.parseDouble(request.getParameter("txt_precio"));
+                String idcliente = request.getParameter("txt_idcliente");
+                int idCliente = Integer.parseInt(idcliente);
                 String vsMensaje = "";
 
                 if (vsMensaje.isEmpty()) {
                     int indRegistro = 0;
-                    Model_PRODUCTOS oProducto = new Model_PRODUCTOS(1, descripcion, precio, 1, precio, 1);
+                    Model_PRODUCTOS oProducto = new Model_PRODUCTOS(1, descripcion, precio, 1, precio, idCliente);
                     try {
-                        int crearProducto = ProductoDAO.RegistrarProducto(descripcion, precio, 1, precio, 1);
+                        int crearProducto = ProductoDAO.RegistrarProducto(descripcion, precio, 1, precio, idCliente);
                         response.sendRedirect("PetShop.jsp");
                     } catch (Exception ex) {
                         Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);

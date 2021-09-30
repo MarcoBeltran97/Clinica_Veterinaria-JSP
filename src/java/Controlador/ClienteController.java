@@ -54,11 +54,8 @@ public class ClienteController extends HttpServlet {
                 request.setAttribute("vsMensaje", vsMensaje);
                 request.getRequestDispatcher("ControllerCliente").forward(request, response);
             }
-
         } else {
-
             response.sendRedirect("Index.jsp");
-
         }
     }
 

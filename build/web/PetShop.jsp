@@ -5,6 +5,17 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page session="true"%>
+
+<%
+    HttpSession ses = request.getSession();
+    int codigo = 0;
+    
+    if(ses.getAttribute("id")!=null){
+        codigo = Integer.parseInt(ses.getAttribute("id").toString());
+    }
+
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,8 +32,8 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light navbar_color">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="PetShop.jsp">
-                        <img class="logo-empresa" src="img/Logo_principal.png" alt="" />
+                    <a class="navbar-brand" href="Index.jsp">
+                        <img class="logo-empresa" src="img/Logo_principal.png" alt="">
                     </a>
                     <button class="navbar-toggler bg-info rounded-3" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -57,12 +68,25 @@
                                     <i class="fas fa-shopping-cart "> Carrito</i>
                                 </a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">${nombre} ${apellido}</a>
+                                <ul class="dropdown-menu">
+                                    <img src="img/user64.png" width="90px"height="90px"style="margin-left: 80px">
+                                    
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#"> <b>${email}</b></a></li>
+                                    <li><a class="dropdown-item" href="Cliente.jsp"> <b>Configuración</b></a></li>
+                                    <li><a class="dropdown-item" href="Index.jsp"> <b>Salir</b></a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2 px-5" type="search" placeholder="Busca Tu Producto" aria-label="Search" />
                             <button class="btn  btn-danger" type="submit" name="btn_buscar">Buscar</button>
                         </form>
+
                     </div>
+
                 </div>
             </nav>
             <nav class=" p-2 navbar-expand-lg navbar-dark bg-success ">
@@ -326,49 +350,53 @@
         <!-- START TIENDA PERROS -->
         <div class=" container  mt-4  ">
             <div class="row">
-                
-                    <div class="card col-lg-4 col-md-2 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
-                        <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
+
+                <div class="card col-lg-4 col-md-2 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
+                    <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Razas Pequeñas X 08 Kg" type="hidden">Ricocan Cordero Adultos Razas Pequeñas X 08 Kg</p>
-                            <p class="text-center"></p><label>S/150.52</label><input name="txt_precio" value="150.52" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/160.00</span>       </p>
+                            <p class="text-center"></p><label>S/150.52</label><input name="txt_precio" value="150.52" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/160.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
                             <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
                             <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
                         </div>
-                        </form>
-                    </div>                
+                    </form>
+                </div>                
                 <div class="card col-lg-4 col-md-2  me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Raza Medianas X 14 Kg" type="hidden">Ricocan Cordero Adultos Raza Medianas X 14 Kg</p>
-                        <p class="text-center"></p><label>S/250.00</label><input name="txt_precio" value="250.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/280.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Raza Medianas X 14 Kg" type="hidden">Ricocan Cordero Adultos Raza Medianas X 14 Kg</p>
+                            <p class="text-center"></p><label>S/250.00</label><input name="txt_precio" value="250.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/280.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-lg-4 col-md-2   me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Razas Grandes X 10 Kg" type="hidden">Ricocan Cordero Adultos Razas Grandes X 10 Kg</p>
-                        <p class="text-center"></p><label>S/180.00</label><input name="txt_precio" value="180.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/270.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Razas Grandes X 10 Kg" type="hidden">Ricocan Cordero Adultos Razas Grandes X 10 Kg</p>
+                            <p class="text-center"></p><label>S/180.00</label><input name="txt_precio" value="180.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/270.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3lg-4 col-md-2  me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Carne Razas Pequeñas X 07 Kg" type="hidden">Ricocan Carne Razas Pequeñas X 07 Kg</p>
-                        <p class="text-center"></p><label>S/130.00</label><input name="txt_precio" value="130.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/140.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Carne Razas Pequeñas X 07 Kg" type="hidden">Ricocan Carne Razas Pequeñas X 07 Kg</p>
+                            <p class="text-center"></p><label>S/130.00</label><input name="txt_precio" value="130.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/140.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -378,46 +406,50 @@
             <div class="row"> 
                 <div class="card col-3  me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Sabor Atún Razas Muy Pequeñas X 07 Kg" type="hidden">Ricocan Sabor Atún Razas Muy Pequeñas X 07 Kg</p>
-                        <p class="text-center"></p><label>S/140.00</label><input name="txt_precio" value="140.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/150.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Sabor Atún Razas Muy Pequeñas X 07 Kg" type="hidden">Ricocan Sabor Atún Razas Muy Pequeñas X 07 Kg</p>
+                            <p class="text-center"></p><label>S/140.00</label><input name="txt_precio" value="140.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/150.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div> 
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Perfume Razas Pequeñas X 500 G." type="hidden">Ricocan Perfume Razas Pequeñas X 500 G.</p>
-                        <p class="text-center"></p><label>S/23.00</label><input name="txt_precio" value="23.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/28.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Perfume Razas Pequeñas X 500 G." type="hidden">Ricocan Perfume Razas Pequeñas X 500 G.</p>
+                            <p class="text-center"></p><label>S/23.00</label><input name="txt_precio" value="23.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/28.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan8.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Perfume Adulto Raza Grande X 1 L" type="hidden">Ricocan Perfume Adulto Raza Grande X 1 L</p>
-                        <p class="text-center"></p><label>S/30.00</label><input name="txt_precio" value="30.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/35.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Perfume Adulto Raza Grande X 1 L" type="hidden">Ricocan Perfume Adulto Raza Grande X 1 L</p>
+                            <p class="text-center"></p><label>S/30.00</label><input name="txt_precio" value="30.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/35.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Razas Pequeñas X 5 Kg" type="hidden">Ricocan Cordero Adultos Razas Pequeñas X 5 Kg</p>
-                        <p class="text-center"></p><label>S/130.00</label><input name="txt_precio" value="130.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/140.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Ricocan Cordero Adultos Razas Pequeñas X 5 Kg" type="hidden">Ricocan Cordero Adultos Razas Pequeñas X 5 Kg</p>
+                            <p class="text-center"></p><label>S/130.00</label><input name="txt_precio" value="130.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/140.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -427,46 +459,50 @@
             <div class="row min"> 
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img id="id_foto" src="img/proplan4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Purina Carne de Res Razas Pequeñas X 09 Kg" type="hidden">Purina Carne de Res Razas Pequeñas X 09 Kg</p>
-                        <p class="text-center"></p><label>S/139.00</label><input name="txt_precio" value="139.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/145.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img id="id_foto" src="img/proplan4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Purina Carne de Res Razas Pequeñas X 09 Kg" type="hidden">Purina Carne de Res Razas Pequeñas X 09 Kg</p>
+                            <p class="text-center"></p><label>S/139.00</label><input name="txt_precio" value="139.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/145.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div> 
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/proplan1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Purina Pro Plan Razas Pequeñas X 07 Kg" type="hidden">Purina Pro Plan Razas Pequeñas X 07 Kg</p>
-                        <p class="text-center"></p><label>S/90.00</label><input name="txt_precio" value="90.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/110.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/proplan1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Purina Pro Plan Razas Pequeñas X 07 Kg" type="hidden">Purina Pro Plan Razas Pequeñas X 07 Kg</p>
+                            <p class="text-center"></p><label>S/90.00</label><input name="txt_precio" value="90.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/110.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/proplan3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Purina Cordero Adultos Razas Medianas X 10 Kg" type="hidden">Purina Cordero Adultos Razas Medianas X 10 Kg</p>
-                        <p class="text-center"></p><label>S/149.00</label><input name="txt_precio" value="149.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/155.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/proplan3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Purina Cordero Adultos Razas Medianas X 10 Kg" type="hidden">Purina Cordero Adultos Razas Medianas X 10 Kg</p>
+                            <p class="text-center"></p><label>S/149.00</label><input name="txt_precio" value="149.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/155.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/proplan5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Pro Plan Cordero Adultos Razas Grandes X 15 Kg" type="hidden">Pro Plan Cordero Adultos Razas Grandes X 15 Kg</p>
-                        <p class="text-center"></p><label>S/219.00</label><input name="txt_precio" value="219.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/230.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/proplan5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Pro Plan Cordero Adultos Razas Grandes X 15 Kg" type="hidden">Pro Plan Cordero Adultos Razas Grandes X 15 Kg</p>
+                            <p class="text-center"></p><label>S/219.00</label><input name="txt_precio" value="219.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/230.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -476,46 +512,50 @@
             <div class="row min"> 
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/proplan6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Pro Plan Purina Cordero Adultos Razas Pequeñas X 10 Kg" type="hidden">Pro Plan Purina Cordero Adultos Razas Pequeñas X 10 Kg</p>
-                        <p class="text-center"></p><label>S/149.00</label><input name="txt_precio" value="149.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/160.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/proplan6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Pro Plan Purina Cordero Adultos Razas Pequeñas X 10 Kg" type="hidden">Pro Plan Purina Cordero Adultos Razas Pequeñas X 10 Kg</p>
+                            <p class="text-center"></p><label>S/149.00</label><input name="txt_precio" value="149.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/160.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div> 
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/proplan7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Purina Carne de Res Razas Muy Pequeñas X 05 Kg" type="hidden">Purina Carne de Res Razas Muy Pequeñas X 05 Kg</p>
-                        <p class="text-center"></p><label>S/45.00</label><input name="txt_precio" value="45.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/55.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/proplan7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Purina Carne de Res Razas Muy Pequeñas X 05 Kg" type="hidden">Purina Carne de Res Razas Muy Pequeñas X 05 Kg</p>
+                            <p class="text-center"></p><label>S/45.00</label><input name="txt_precio" value="45.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/55.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/proplan8.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Purina Cordero Adultos Razas Medianas X 08 Kg" type="hidden">Purina Cordero Adultos Razas Medianas X 08 Kg</p>
-                        <p class="text-center"></p><label>S/75.00</label><input name="txt_precio" value="75.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/84.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/proplan8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Purina Cordero Adultos Razas Medianas X 08 Kg" type="hidden">Purina Cordero Adultos Razas Medianas X 08 Kg</p>
+                            <p class="text-center"></p><label>S/75.00</label><input name="txt_precio" value="75.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/84.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
                 <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
-                    <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text"><input name="txt_info" value="Purina Cordero Razas Pequeñas X 10 Kg" type="hidden">Purina Cordero Razas Pequeñas X 10 Kg</p>
-                        <p class="text-center"></p><label>S/90.00</label><input name="txt_precio" value="90.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/112.00</span>       </p>
-                        <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-                        <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                    </div>
+                        <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"><input name="txt_info" value="Purina Cordero Razas Pequeñas X 10 Kg" type="hidden">Purina Cordero Razas Pequeñas X 10 Kg</p>
+                            <p class="text-center"></p><label>S/90.00</label><input name="txt_precio" value="90.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/112.00</span>
+                            <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
+                            <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+                        </div>
                     </form>
                 </div>
             </div>

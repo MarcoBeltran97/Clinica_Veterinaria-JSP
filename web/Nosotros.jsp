@@ -17,8 +17,8 @@
     <body>
         <nav class="navbar navbar-expand-xl navbar-light border-5  border-bottom border-dark bg-success">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="logo-empresa" src="../Img/Logo_principal.png" alt="">
+            <a class="navbar-brand" href="Index.jsp">
+                <img class="logo-empresa" src="img/Logo_principal.png" alt="">
             </a>
             <button class="navbar-toggler bg-success rounded-3" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,7 +34,7 @@
                         <a class="nav-link p-5" href="#">Servicios</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link p-5" href="../HTML/PetShop.html">Pet Shop</a>
+                        <a class="nav-link p-5" href="PetShop.jsp">Pet Shop</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link p-5" href="#">Servicios</a>
@@ -55,10 +55,10 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner ">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../Img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." />
+              <img src="img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../Img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." />
+            <img src="img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." />
           </div>
           
         </div>
@@ -80,7 +80,7 @@
      
         <div class="col">
             <div class="">
-                <img src="../Img/doctora2.jpg" class="ms-5 m-auto" alt="..." height="500px">
+                <img src="img/doctora2.jpg" class="ms-5 m-auto" alt="..." height="500px">
                 <div class="card-body">
 
                 </div>
@@ -122,7 +122,7 @@
         </div>
         <div class="col">
             <div class="">
-                <img src="../Img/huellitas9.jpg" class="" alt="..." height="500px" width="auto">
+                <img src="img/huellitas9.jpg" class="" alt="..." height="500px" width="auto">
                 <div class="card-body">
 
                 </div>
@@ -132,7 +132,7 @@
 
         <div class="col img-diseño">
             <div class=" ">
-                <img src="../Img/doctor.jpg" class="" alt="..." height="500px">
+                <img src="img/doctor.jpg" class="" alt="..." height="500px">
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
 
         <div class="container border-top border-primary mt-5" style="max-width: 500px;" id="contenedor-formulario">
             <div id="tituloformulario" class="text-center mb-4">
-                <div> <img src="../Img/support.png" class="img-fluid ps-5" alt=""></div>
+                <div> <img src="img/support.png" class="img-fluid ps-5" alt=""></div>
                 <h2>Contactos</h2>
                 <p class="fs-5"> Estamos Aqui para Ayudarte</p>
             </div>

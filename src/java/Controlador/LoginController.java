@@ -1,9 +1,12 @@
 package Controlador;
 
+import Capa_DAO.ClienteDAO;
 import Capa_DAO.LoginDAO;
 import Capa_MODELO.Model_CLIENTES;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -29,25 +32,27 @@ public class LoginController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            Model_CLIENTES tm=new Model_CLIENTES();
-            LoginDAO lg=new LoginDAO();
-            int rspta=0;
-            if(request.getParameter("btn_login")!=null){
-            String usuario=request.getParameter("txt_Email");
-            String clave=request.getParameter("txt_password");
-            tm.setEmail(usuario);
-            tm.setContrasena(clave);
-                try {
-                    rspta=lg.validarLogin(tm);
-                } catch (Exception ex) {
-                    Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+            Model_CLIENTES tm = new Model_CLIENTES();
+            LoginDAO lg = new LoginDAO();
+            ClienteDAO cli = new ClienteDAO();
+            List<Model_CLIENTES> datos = new ArrayList<Model_CLIENTES>();
+            int rspta = 0;
+            if (request.getParameter("btn_login") != null) {
+                String usuario = request.getParameter("txt_Email");
+                String clave = request.getParameter("txt_password");
+
+                datos = lg.validarLogin(usuario, clave);
+                
+                if(datos.size()>0){                    
+                    request.setAttribute("datos", datos);
+                    request.getRequestDispatcher("Index.jsp").forward(request, response);
+                    
+                } else {
+                    response.sendRedirect("/Veterinaria_Huellitas/Index.jsp?rspta=" + rspta);
                 }
-              if(rspta!=0){
-                  response.sendRedirect("/Veterinaria_Huellitas/PetShop.jsp");
-              }else{
-                  response.sendRedirect("/Veterinaria_Huellitas/Index.jsp?rspta="+rspta);
-              } 
             }
+        } catch (Exception ex) {
+            Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

@@ -1,6 +1,13 @@
 *{
     box-sizing: border-box;
 }
+.logo-empresa{
+min-width: 100px;
+max-width: 200px;
+margin-left: 60px;
+
+border-radius: 10%;
+}
 body {
     margin: 0;
  
@@ -89,13 +96,7 @@ height: 480px;
     .car_efecto:hover{
         background-color:yellow;
     }
-   .logo-empresa{
-    min-width: 140px;
-    max-width: 40px;
-    margin-left: 60px;
-    
-    border-radius: 10%;
-    }
+
     .card-body a {
 text-decoration: none;
 

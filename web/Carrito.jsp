@@ -21,12 +21,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
         <link href="Css/CarritoCSS.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="JS/jquery-1.js"></script>
-
-        <link rel="stylesheet" type="text/css" href="Css/result-light.css">
-
-        <link rel="stylesheet" type="text/css" href="Css/bootstrap.css">
-        <script type="text/javascript" src="JS/bootstrap.js"></script>
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
         <title>JSP Page</title>
     </head>
     <style>
@@ -113,6 +112,17 @@
                                     <i class="fas fa-shopping-cart "> Carrito</i>
                                 </a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">${nombre} ${apellido}</a>
+                                <ul class="dropdown-menu">
+                                    <img src="img/user64.png" width="90px"height="90px"style="margin-left: 80px">
+
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#"> <b>${email}</b></a></li>
+                                    <li><a class="dropdown-item" href="Cliente.jsp"> <b>Configuración</b></a></li>
+                                    <li><a class="dropdown-item" href="Index.jsp"> <b>Salir</b></a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2 px-5" type="search" placeholder="Busca Tu Producto" aria-label="Search" />
@@ -134,7 +144,10 @@
                 oCN = cConeccion.abrirConexion();
                 PreparedStatement ps = null;
                 ResultSet rs = null;
-                ps = oCN.prepareStatement("SELECT * FROM tb_PRODUCTO");
+                HttpSession ses = request.getSession();
+                int codigo = 0;
+                codigo = Integer.parseInt(ses.getAttribute("id").toString());
+                ps = oCN.prepareStatement("SELECT * FROM tb_PRODUCTO WHERE idCliente = '"+codigo+"'");
                 rs = ps.executeQuery();
             %>
             <div>
@@ -147,7 +160,7 @@
                         <th class="text-center">Total</th>
                         <th></th>
                     </tr>
-                    <%                        while (rs.next()) {
+                    <%   while (rs.next()) {
                     %>
                     <tr>
                         <th class="text-center"><%= rs.getInt("idProducto")%></th>
@@ -258,15 +271,15 @@
                 <div class="modal-dialog vertical-align-center">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal"><span aria-hidden="true">×</span><span
                                     class="sr-only">Close</span>
                             </button>
                             <h4 class="modal-title" id="myModalLabel">Mantenimiento</h4>
                         </div>
                         <form method="post" action="/Veterinaria_Huellitas/ProductoController">
-                        <div class="modal-body">
-                            
-                                <table class="table table-bordered border-primary">
+                            <div class="modal-body">
+
+                                <table class="table table-bordered border-Default">
                                     <tr>
                                         <th class="text-center"><input class="text-center tableid border-0" type="text" id="cod" name="txt_cod" readonly=""></th>
                                         <th class="text-center"><input class="text-center tabledes border-0" type="text" id="des" readonly=""></th>
@@ -276,11 +289,11 @@
                                     </tr>
                                 </table>
 
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button name="btn_actualizar" type="submit" class="btn btn-primary">Save changes</button>
-                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                <button name="btn_actualizar" type="submit" class="btn btn-primary">GUARDAR CAMBIOS</button>
+                            </div>
                         </form>
                     </div>
                 </div>
