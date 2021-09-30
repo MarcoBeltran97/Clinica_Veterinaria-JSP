@@ -23,7 +23,7 @@ CREATE TABLE TB_CLIENTE (
   nombres_cliente varchar(50) NOT NULL,
   apellidos_cliente varchar(50) NOT NULL,
   dni_cliente char(8) NOT NULL,
-  email_cliente varchar(30) NOT NULL,
+  email_cliente varchar(30) UNIQUE NOT NULL,
   telefono_cliente varchar(15) NOT NULL,
   contraseña_cliente varchar(20) NOT NULL,
   PRIMARY KEY (idCliente)

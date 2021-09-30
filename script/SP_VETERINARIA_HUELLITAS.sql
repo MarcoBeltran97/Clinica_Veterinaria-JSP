@@ -20,6 +20,35 @@ DELIMITER ;
 
 /*CALL sp_agregarCliente("ANDY", "FLORIAN", "14785236", "andyflorian@gmail.com", "986532147", "1234");*/
 
+/*Actualizar Cliente*/
+DELIMITER // 
+CREATE PROCEDURE sp_actualizarCliente
+(in codigo_prod int,
+in nombre_cli varchar(50),
+in apellido_cli varchar(50),
+in dni_cli char(8),
+in email_cli varchar(30),
+in telefono_cli varchar(15),
+in passsword varchar(20))
+BEGIN  
+	UPDATE TB_CLIENTE SET `nombres_cliente` = nombre_cli, `apellidos_cliente` = apellido_cli, `dni_cliente` = dni_cli, `email_cliente` = email_cli, `telefono_cliente` = telefono_cli, `contraseña_cliente` = passsword WHERE `idCliente` = codigo_prod;
+END;  
+//
+
+CALL sp_actualizarCliente(9,'LESLIE', 'CHAMBI', '78787878', 'leslie@gmail.com', 987987987, 1111);
+
+
+/*Buscar Cliente*/
+DELIMITER // 
+CREATE PROCEDURE sp_buscarCliente ( email_cli VARCHAR(30) )  
+BEGIN  
+SELECT idCliente, nombres_cliente, apellidos_cliente, dni_cliente, email_cliente, telefono_cliente, contraseña_cliente FROM TB_CLIENTE WHERE `email_cliente` = email_cli;
+END;  
+// 
+
+/*call sp_buscarCliente ("marcobeltran97@gmail.com");*/
+
+/************************************PRODUCTO************************************/
 
 -- Agregar Producto--
 DELIMITER $$
@@ -36,7 +65,6 @@ end;$$
 DELIMITER ;
 
 /*CALL sp_agregarProducto ('Purina Raza Pequeña',156.10,1,150.00,1);*/
-
 
 /*Actualizar Producto*/
 DELIMITER // 
