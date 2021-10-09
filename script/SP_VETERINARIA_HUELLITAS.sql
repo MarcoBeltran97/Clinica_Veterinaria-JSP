@@ -1,8 +1,15 @@
 USE BD_VETERINARIA_HUELLITAS;
 
-
 SELECT * FROM TB_CLIENTE;
 SELECT * FROM TB_PRODUCTO;
+
+/*
+SELECT * FROM tb_PRODUCTO WHERE idCliente = 1;
+
+SELECT *, (SELECT Sum(precio_total) FROM tb_PRODUCTO WHERE  idCliente = 1) AS TOTAL FROM tb_PRODUCTO WHERE idCliente = 1;
+
+SELECT Sum(precio_total) AS TOTAL FROM tb_PRODUCTO WHERE idCliente = 1;
+*/
 
 -- Agregar Cliente
 DELIMITER $$
@@ -35,7 +42,7 @@ BEGIN
 END;  
 //
 
-CALL sp_actualizarCliente(9,'LESLIE', 'CHAMBI', '78787878', 'leslie@gmail.com', 987987987, 1111);
+/*CALL sp_actualizarCliente(9,'LESLIE', 'CHAMBI', '78787878', 'leslie@gmail.com', 987987987, 1111);*/
 
 
 /*Buscar Cliente*/
@@ -47,6 +54,19 @@ END;
 // 
 
 /*call sp_buscarCliente ("marcobeltran97@gmail.com");*/
+
+
+
+/*Eliminar Cliente*/
+DELIMITER // 
+CREATE PROCEDURE sp_eliminarCliente ( id int)
+BEGIN  
+DELETE FROM TB_CLIENTE WHERE IDCLIENTE = id;
+END;  
+//
+
+/*call sp_eliminarCliente(12)*/
+
 
 /************************************PRODUCTO************************************/
 
@@ -100,4 +120,7 @@ END;
 // 
 
 /*call sp_buscarProducto (22);*/
+
+
+
 

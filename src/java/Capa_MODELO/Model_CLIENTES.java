@@ -23,6 +23,11 @@ public class Model_CLIENTES {
         this.contrasena = contrasena;
     }
 
+    public Model_CLIENTES(int idCliente) {
+        this.idCliente = idCliente;
+    }    
+    
+
     public int getIdCliente() {
         return idCliente;
     }

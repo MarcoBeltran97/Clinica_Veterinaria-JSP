@@ -52,16 +52,61 @@ public class ClienteDAO {
             Cstm.setString(1, pUsuario);
             while (rs.next()) {
                 cli.setIdCliente(rs.getInt("idCliente"));
-                /*cli.setNombres(rs.getString("nombres_cliente"));
-                cli.setApellidos(rs.getString("apellidos_cliente"));
-                cli.setDni(rs.getString("dni_cliente"));
-                cli.setEmail(rs.getString("email_cliente"));
-                cli.setTelefono(rs.getString("telefono_cliente"));
-                cli.setContrasena(rs.getString("contraseña_cliente"));*/
-
             }
         } catch (SQLException e) {
             e.getMessage().toString();
         }
+    }
+    
+    public static int actualizarCliente(int pcod ,String pNombre, String pApellido, String pDNI, String pEmail, String pTelefono, String pContrasena) {
+        int indActualizarCliente = 0;
+        BD_Conexion cConeccion = new BD_Conexion();
+        try {
+            oCN = cConeccion.abrirConexion();
+            String spActualizar = "{CALL sp_actualizarCliente (?, ?, ?, ?, ?, ?, ?)}";
+
+            System.out.println(spActualizar);
+            CallableStatement Cstm = (CallableStatement) oCN.prepareCall(spActualizar);
+            Cstm.setInt(1, pcod);
+            Cstm.setString(2, pNombre);
+            Cstm.setString(3, pApellido);
+            Cstm.setString(4, pDNI);
+            Cstm.setString(5, pEmail);
+            Cstm.setString(6, pTelefono);
+            Cstm.setString(7, pContrasena);
+            indActualizarCliente = Cstm.executeUpdate();
+            Model_CLIENTES.a_ESTADOINSERT = indActualizarCliente;
+            if (indActualizarCliente == 1) {
+                System.out.println("Se actualizó el cliente");
+            } else {
+                System.out.println("No se actualizo el cliente");
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return indActualizarCliente;
+    }
+    
+    public static int eliminarCliente(int pidCliente) {
+        int indEliminarCliente = 0;
+        BD_Conexion cConeccion = new BD_Conexion();
+        try {
+            oCN = cConeccion.abrirConexion();
+            String spEliminar = "{CALL sp_eliminarCliente (?)}";
+
+            System.out.println(spEliminar);
+            CallableStatement Cstm = (CallableStatement) oCN.prepareCall(spEliminar);
+            Cstm.setInt(1, pidCliente);
+            indEliminarCliente = Cstm.executeUpdate();
+            Model_CLIENTES.a_ESTADOINSERT = indEliminarCliente;
+            if (indEliminarCliente == 1) {
+                System.out.println("Se eliminó el cliente");
+            } else {
+                System.out.println("No se eliminó el cliente");
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        return indEliminarCliente;
     }
 }

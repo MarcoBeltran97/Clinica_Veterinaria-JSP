@@ -30,6 +30,8 @@ public class ClienteController extends HttpServlet {
         int rsptaCli = 0;
         ClienteDAO cli = new ClienteDAO();
         Model_CLIENTES rc = new Model_CLIENTES();
+        
+        /*AGREGAR*/
         if (request.getParameter("btn_registrar") != null) {
             String nombre = request.getParameter("txt_nombre");
             String apellido = request.getParameter("txt_apellido");
@@ -56,6 +58,51 @@ public class ClienteController extends HttpServlet {
             }
         } else {
             response.sendRedirect("Index.jsp");
+        }
+        
+        /*ACTUALIZAR*/
+        try {
+            if (request.getParameter("btn_guardarCli") != null) {
+                String vlcodigo = request.getParameter("txt_codCli");
+                int vlCodigo = Integer.parseInt(vlcodigo);
+                String nombre = request.getParameter("txt_nomCli");
+                String apellido = request.getParameter("txt_apeCli");
+                String dni = request.getParameter("txt_dniCli");
+                String email = request.getParameter("txt_correoCli");
+                String telefono = request.getParameter("txt_telCli");
+                String contrasena = request.getParameter("txt_contraCli");
+                String vsMensaje = "";
+
+                if (vsMensaje.isEmpty()) {
+                    int indActualizar = 0;
+                    Model_CLIENTES oCliente = new Model_CLIENTES(vlCodigo, nombre, apellido, dni, email, telefono, contrasena);
+                    int actualizarCliente = ClienteDAO.actualizarCliente(vlCodigo, nombre, apellido, dni, email, telefono, contrasena);
+                } else {
+                }
+            } else {
+                response.sendRedirect("Cliente.jsp");
+            }
+        } catch (Exception e) {
+        }
+        
+        
+        /*ELIMINAR*/
+        try {
+            if (request.getParameter("btn_eliminarCli") != null) {
+                String vlcodigo = request.getParameter("txt_codCli");
+                int vlCodigo = Integer.parseInt(vlcodigo);
+                String vsMensaje = "";
+
+                if (vsMensaje.isEmpty()) {
+                    int indActualizar = 0;
+                    Model_CLIENTES oCliente = new Model_CLIENTES(vlCodigo);
+                    int actualizarCliente = ClienteDAO.eliminarCliente(vlCodigo);
+                } else {
+                }
+            } else {
+                response.sendRedirect("Index.jsp");
+            }
+        } catch (Exception e) {
         }
     }
 

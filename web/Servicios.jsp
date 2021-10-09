@@ -12,16 +12,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300;1,500;1,900&display=swap" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body class="body-pagina">
 
-        <nav class="navbar navbar-expand-xl navbar-light border-5  border-bottom border-dark">
+        <nav class="navbar navbar-expand-xl navbar-light border-5  border-bottom border-dark sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="Index.jsp">
-                    <img class="logo-empresa" src="img/logo_formularios.png" alt="">
+                    <img class="logo-empresa" src="img/Logo_principal.png" alt="">
                 </a>
                 <button class="navbar-toggler bg-success rounded-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,33 +31,23 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
                         <li class="nav-item">
-                            <a class="nav-link active p-5 text-dark" aria-current="page" href="Nosotros.jsp">Nosotros</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link p-5 text-dark" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link p-5 text-dark" href="PetShop.jsp">Pet Shop</a>
-                        </li>
-                        <li class="nav-item dropdown  ">
-                            <a class="nav-link dropdown-toggle p-5 text-dark" href="#" id="navbarDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                Sedes
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Miraflores</a></li>
-                                <li><a class="dropdown-item" href="#">San Isidro</a></li>
-                                <li><a class="dropdown-item" href="#">San Juan de Lurigancho</a></li>
-                                <li><a class="dropdown-item" href="#">Comas</a></li>
-
-                            </ul>
+                            <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-reset  align-items-center nav-link p-5 " data-bs-toggle="offcanvas"
+                            <a class="nav-link active  text-white" aria-current="page" href="Nosotros.jsp">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="PetShop.jsp">Pet Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-reset  align-items-center nav-link " data-bs-toggle="offcanvas"
                                href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">
-                                <span class="text-dark">LOGIN </span>
+                                <span class="text-white">Login </span>
                             </a>
                         </li>
                     </ul>
@@ -63,38 +55,186 @@
             </div>
         </nav>
         <!--INICIO SERVICIOS HUELLITAS VETERINARIA-->
-        <div class="container-fluid text-center mt-2">
+        <div class="container mt-3 text-primary">
 
-            <h1 class="text-center  "><b style="font-family: 'Poppins', sans-serif;" class="border-bottom border-4 border-success">¿ QUE OFRECEMOS? </b></h1>
+            <h1 class="  " style="font-family: 'Roboto', sans-serif;" class="">SERVICIOS </h1>
 
         </div>
-        <div class="container-fluid mt-4 ">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col" >
-                    <div class="card"style="box-shadow: 5px 5px 15px">
-                        <img src="img/acupuntura.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Servicio Acupuntura</h5>
-                            <p class="card-text">La Acupuntura Veterinaria actúa complementando en conjunto a diversas especialidades de la profesión, viendo al individuo como un todo..</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card"style="box-shadow: 5px 5px 15px">
-                        <img src="img/anestesia.jpg" class="card-img-top" alt="..."height="400px">
-                        <div class="card-body">
-                            <h5 class="card-title">Anestesia</h5>
-                            <p class="card-text">Pensando en la seguridad del paciente, antes de inducirlo a la anestesia, debemos evaluarlo físicamente, así como a través de exámenes preoperatorios.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card"style="box-shadow: 5px 5px 15px">
-                        <img src="img/cardiologia.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title mt-5">Cardiologia</h5>
-                            <p class="card-text">Los exámenes cardiológicos periódicos se han vuelto una práctica necesaria permitiendo la identificación y tratamiento de enfermedades cardíacas.</p>
+        <div class="container mt-2">
 
+            <p class="  " style="font-family: 'Roboto', sans-serif;" class="">
+                En Clínica Veterinaria Ejea ofrecemos una asistencia completa y de calidad a tu mascota. Nuestro principal objetivo es mantener la salud y el bienestar de nuestros animales y ayudarlos a restablecerse cuando están enfermos. Para ello, contamos con un personal altamente cualificado e instalaciones modernas y bien equipadas.
+
+
+            </p>
+
+        </div>
+       
+        <div class="container-fluid text-center mt-2 text-primary">
+
+         
+
+        </div>
+      
+
+        <!--COLUMNA 1 SERVICIOS-->
+        <div class="container mt-4"> 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="">
+                        <img src="img/acupuntura.jpg" class="card-img-top prueba2" alt="..." style="border-radius: 20px;">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>ACUPUNTURA </b> </h5>
+                            <div class=" mt-2 text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <img src="img/odontologia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>ODONTOLOGIA </b> </h5>
+                            <div class=" mt-2 text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <img src="img/dermatologia.jpeg" class="card-img-top" alt="..."style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class=" text-center fs-4" style="font-family: 'Roboto', sans-serif;"><b>DERMATOLOGIA </b> </h5>
+                            <div class=" mt-2 text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--FINAL COLUMNA1 SERVICIOS-->
+        <!--COLUMNA 2 SERVICIOS-->
+        <div class="container mt-3"> 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="">
+                        <img src="img/baño.jpg" class="card-img-top" alt="..." style="border-radius: 20px;">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>BAÑO </b> </h5>
+                            <div class=" mt-2 text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <img src="img/baño-y-peluquería-canina.jpeg" class="card-img-top" alt="..."style="border-radius: 20px;" height="270px">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-2" style="font-family: 'Roboto', sans-serif;"><b>PELUQUERIA CANINA </b> </h5>
+                            <div class=" text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <img src="img/cirujia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;"height="260px">
+                        <div class="card-body">
+                            <h5 class=" text-center fs-4 " style="font-family: 'Roboto', sans-serif;"><b>CIRUJIA </b> </h5>
+                            <div class="text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--FINAL COLUMNA2 SERVICIOS-->
+        <!--COLUMNA 3 SERVICIOS-->
+        <div class="container mt-3"> 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="">
+                        <img src="img/radiologia.jpeg" class="card-img-top" alt="..." style="border-radius: 20px;">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>RADIOLOGIA </b> </h5>
+                            <div class=" mt-2 text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <img src="img/diagnostico.jpg" class="card-img-top" alt="..."style="border-radius: 20px;" height="260px">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>DIAGNOSTICO </b> </h5>
+                            <div class=" mt-2 text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <img src="img/oncologia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;"height="250px">
+                        <div class="card-body">
+                            <h5 class=" text-center fs-4 " style="font-family: 'Roboto', sans-serif;"><b>ONCOLOGIA </b> </h5>
+                            <div class="  text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,45 +243,15 @@
         </div>
 
 
-        <div class="container-fluid mt-4">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card"style="box-shadow: 5px 5px 15px">
-                        <img src="img/endocrinologia.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Cirugia Especializada</h5>
-                            <p class="card-text">Nuestros profesionales se encuentran capacitados para realizar todo tipo de cirugías especializadas, desde cirugías plásticas hasta neurocirugías..</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card"style="box-shadow: 5px 5px 15px">
-                        <img src="img/baño.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Baño</h5>
-                            <p class="card-text">Brindamos el servicio de baño exclusivos, con equipos de ultima generacion. Contamos con tecnologia Alemana donde tu mascota tendra el mejor cuidado </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card"style="box-shadow: 5px 5px 15px">
-                        <img src="img/ortodoncia-para-perros.jpg" class="card-img-top" alt="..." >
-                        <div class="card-body">
-                            <h5 class="card-title mt-2">Odontologia</h5>
-                            <p class="card-text">En la Clínica Veterinaria Huellitas, estamos capacitados para atender los problemas orales de tu mascota..</p>
-                            <br> <br><br> 
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="container-fluid mt-5 py-5"style="background-color: #8E44AD">
+        <!--FINAL COLUMNA 3 SERVICIOS-->
+
+        <div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p mt-5"style="background-color: #8E44AD">
             <div class="row">
-                <div class="col-md-4 me-4">
-                    <h4>LOCALES Y CONTACTO</h4>
+                <div class="col-md-4 ">
+                    <h4 class="fs-2 text-capitalize text-white ms-5">LOCALES Y CONTACTO</h4>
 
-                    <ul class="list-unstyled mb-0">
+                    <ul class="list-unstyled mb-0 ms-5">
                         <li>
                             <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
                             <p class="mb-0">998 195 193</p>
@@ -170,12 +280,12 @@
 
                     </ul>
 
-
-
                 </div>
 
+
+
                 <div class="col-md-4">
-                    <h4 class="text-uppercase oswald">Horarios</h4>
+                    <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
                     <ul class="list-unstyled mb-0">
                         <li>
                             <p class="mb-0 font-weight-bold">Barranco</p>
@@ -204,13 +314,19 @@
                     </ul>
                 </div>
 
+                <!--//////////////////-->
+
+                <div class="col-md-2">
+                    <img src="img/Logo_principal.png">
+                </div>
 
             </div>
 
-
         </div>
 
-        <footer class="bg-dark text-white p-3 mt-4">
+
+
+        <footer class="bg-dark text-white p-3 ">
             <div class="container">
                 <div class="row">
                     <ul class="nav justify-content-center">

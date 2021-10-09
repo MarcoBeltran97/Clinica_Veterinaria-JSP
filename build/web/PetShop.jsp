@@ -21,7 +21,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://kit.fontawesome.com/d729fc7782.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../CSS/ShopStyle.css" type="text/css" />
+        <link rel="stylesheet" href="Css/Petshopcss.css" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
         <link href="Css/Petshopcss.css" rel="stylesheet" type="text/css"/>
@@ -29,8 +29,9 @@
     </head>
     <body>
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light navbar_color">
+
+        <header class=" ">
+            <nav class="navbar navbar-expand-lg navbar-light navbar_color navbar-fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="Index.jsp">
                         <img class="logo-empresa" src="img/Logo_principal.png" alt="">
@@ -351,7 +352,7 @@
         <div class=" container  mt-4  ">
             <div class="row">
 
-                <div class="card col-lg-4 col-md-2 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
+                <div class="card col-lg-3 col-md-2  border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -363,7 +364,7 @@
                         </div>
                     </form>
                 </div>                
-                <div class="card col-lg-4 col-md-2  me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-lg-3 col-md-2  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -375,7 +376,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-lg-4 col-md-2   me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-lg-3 col-md-2   border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -387,7 +388,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3lg-4 col-md-2  me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3 col-lg-3 col-md-2 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -404,7 +405,7 @@
         <!--2-->
         <div class=" container  mt-4  ">
             <div class="row"> 
-                <div class="card col-3  me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
+                <div class="card col-3 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -416,7 +417,7 @@
                         </div>
                     </form>
                 </div> 
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -428,7 +429,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan8.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -440,7 +441,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -457,7 +458,7 @@
         <!--3-->
         <div class=" container  mt-4  ">
             <div class="row min"> 
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
+                <div class="card col-3 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img id="id_foto" src="img/proplan4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -469,7 +470,7 @@
                         </div>
                     </form>
                 </div> 
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/proplan1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -481,7 +482,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/proplan3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -493,7 +494,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/proplan5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -510,7 +511,7 @@
         <!--4-->
         <div class=" container  mt-4  ">
             <div class="row min"> 
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto  " style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/proplan6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -522,7 +523,7 @@
                         </div>
                     </form>
                 </div> 
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/proplan7.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -534,7 +535,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/proplan8.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -546,7 +547,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="card col-3 me-4 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
+                <div class="card col-3 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -563,7 +564,83 @@
         <br><br><br><br> 
         <!-- END TIENDA PERROS -->
         <!--FOOTER-->
+<div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p"style="background-color: #8E44AD">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <h4 class="fs-2 text-capitalize text-white ms-5">LOCALES Y CONTACTO</h4>
 
+                    <ul class="list-unstyled mb-0 ms-5">
+                        <li>
+                            <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                            <p class="mb-0">998 195 193</p>
+                            <p>01 446 6179 | 01 637 5132</p>
+                        </li>
+                        <li>
+                            <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                            <p class="mb-0">998 195 193</p>
+                            <p>01 446 6179 | 01 637 5132</p>
+                        </li>
+                        <li>
+                            <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                            <p class="mb-0">998 195 193</p>
+                            <p>01 446 6179 | 01 637 5132</p>
+                        </li>
+                        <li>
+                            <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                            <p class="mb-0">998 195 193</p>
+                            <p>01 446 6179 | 01 637 5132</p>
+                        </li>
+                        <li>
+                            <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                            <p class="mb-0">998 195 193</p>
+                            <p>01 446 6179 | 01 637 5132</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+                    <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <p class="mb-0 font-weight-bold">Barranco</p>
+                            <p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
+                            <p>EMERGENCIAS 24hrs</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">Lince</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p>Domingos - 9 a.m. - 6 p.m.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">San Borja</p>
+                            <p>Atención: Lunes a Domingo - 8 a.m. - 8 p.m.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">Los Olivos</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p>Domingos - 9 a.m. - 6 p.m.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">San Juan de Miraflores</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--//////////////////-->
+
+                <div class="col-md-2">
+                    <img src="img/Logo_principal.png">
+                </div>
+
+            </div>
+
+        </div>
         <footer class="bg-dark text-white p-3">
             <div class="container">
                 <div class="row">
@@ -608,9 +685,9 @@
     </footer>
     <!<!-- END FOOTER -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
 </body>
 
 </html>

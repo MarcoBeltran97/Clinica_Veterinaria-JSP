@@ -2,15 +2,15 @@
     box-sizing: border-box;
 }
 .logo-empresa{
-min-width: 100px;
-max-width: 200px;
-margin-left: 60px;
+    min-width: 100px;
+    max-width: 200px;
+    margin-left: 60px;
 
-border-radius: 10%;
+    border-radius: 10%;
 }
 body {
     margin: 0;
- 
+
 }
 
 .main--header{
@@ -18,9 +18,9 @@ body {
 
 }
 .main--header_title{
-text-align: center;
-font-size: 2.5em;
-margin: 10px 0;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
 }
 .main-nav{
     display: none;
@@ -52,56 +52,59 @@ margin: 10px 0;
 
 /**/
 
-    a {
-        font-family: 'Oswald', sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    .navbar{
-        box-shadow: 5px 5px 10px;
-        padding-bottom: 0px;
-        background:green ;
-        
-        }
-        .navbar_color{
-            background:green ;
-        }
-        .nav-link {
-            color: white !important;
-            font-size: 15px;
-        }
-        
-        /*Stilos productos*/
-        .contenedor-productos{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 10px;
-        }
-    .producto{
+a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar{
+    box-shadow: 5px 5px 10px;
+    padding-bottom: 0px;
+    background:green ;
 
-        border: 2px solid black;
-padding: 20px;
+}
+.navbar_color{
+    background:green ;
+}
+.nav-link {
+    color: white !important;
+    font-size: 15px;
+}
 
-    }
-    .btn_editar{
-        width: 150px;
-        margin-top: 10px;
-    }
-    .car_efecto{
-margin: auto;
-height: 480px;
+/*Stilos productos*/
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.producto{
+
+    border: 2px solid black;
+    padding: 20px;
+
+}
+.btn_editar{
+    width: 150px;
+    margin-top: 10px;
+}
+.car_efecto{
+    margin: auto;
+    height: 480px;
 
 
-    }
-    .car_efecto:hover{
-        background-color:yellow;
-    }
+}
+.car_efecto:hover{
+    background-color:yellow;
+}
 
-    .card-body a {
-text-decoration: none;
+.card-body a {
+    text-decoration: none;
 
-    }
-    .card-body button {
-        color: white;
-        
-            }
+}
+.card-body button {
+    color: white;
+
+}
+.horarios_p ul li {
+    color: white !important;
+}
