@@ -20,3 +20,6 @@ Procedimientos Almacenados para el Producto, usando JQuery para editar mediante 
 
 6to. Dia 29/09/2021:
 Se agregan algunas validaciones para el producto según el cliente, y se agrega un nuevo formulario para el mantenimiento del Cliente.
+
+7mo. Dia 09/10/2021:
+Suma de los precios según el cliente que compra y se completa el mantenimiento del cliente.
