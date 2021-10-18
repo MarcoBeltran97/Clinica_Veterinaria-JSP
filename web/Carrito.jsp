@@ -90,11 +90,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<<<<<<< HEAD
+                            <li class="nav-item me-2">
+                                <a class="btn text-white" href="Index.jsp" tabindex="-1" aria-disabled="true">
+                                    <i class="fas fa-home"> Home</i>
+                                </a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn text-white" href="Servicios.jsp" tabindex="-1" aria-disabled="true" 
+                                   >
+                                    <i class="fas fa-map"> Servicios</i>
+=======
 
                             <li class="nav-item me-2">
                                 <a class="btn text-white" href="#" tabindex="-1" aria-disabled="true" 
                                    >
                                     <i class="fas fa-map-marker-alt"> Ubicanos</i>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
 
 
@@ -107,17 +119,50 @@
                                 </a>
                             </li>
                             <li class="nav-item me-2">
+<<<<<<< HEAD
+                                <a class="btn text-white" href="PetShop.jsp" tabindex="-1" aria-disabled="true">
+                                    <i class="fas fa-shopping-bag"> Pet Shop</i>
+                                </a>
+                            </li>
+
+
+=======
                                 <a class="btn text-white" href="#" tabindex="-1" aria-disabled="true">
                                     <i class="fas fa-shopping-cart "> Carrito</i>
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             <li class="nav-item">
                                 <a class="nav-link active btn btn-outline-danger " aria-current="page" href="#">
                                     <i class="fas fa-user  "></i>
 
                                 </a>
                             </li>
+<<<<<<< HEAD
+                            <div class=" dropdown">
+                                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                                    ${nombre} ${apellido}
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="box-shadow: 0px 10px 5px #777">
+                                    <img src="img/user64.png" width="80px"height="80px"style="margin-left: 80px">
+
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#"> <b>${email}</b></a></li>
+                                    <li><a class="dropdown-item" href="Cliente.jsp"> <b>Configuración</b></a></li>
+                                    <li><a class="dropdown-item" href="Index.jsp"> <b>Salir</b></a></li>
+
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+
+=======
 
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">${nombre} ${apellido}</a>
                             <ul class="dropdown-menu">
@@ -129,6 +174,7 @@
                                 <li><a class="dropdown-item" href="Index.jsp"> <b>Salir</b></a></li>
                             </ul>
                             </li>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2 px-5" type="search" placeholder="Busca Tu Producto" aria-label="Search" />
@@ -143,6 +189,10 @@
             <img src="img/venta.png" alt="" width="100%">
         </div>
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <div class="container">
             <%
                 BD_Conexion cConeccion = new BD_Conexion();
@@ -161,7 +211,11 @@
                     <tr>
                         <th class="text-center">Codigo</th>
                         <th class="text-center">Descripcion</th>
+<<<<<<< HEAD
+                        <th class="text-center">Precio </th>
+=======
                         <th class="text-center">Precio</th>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <th class="text-center">Cantidad</th>
                         <th class="text-center">Total</th>
                         <th></th>
@@ -229,8 +283,13 @@
                     <img src="img/candado.png">
                     <a data-bs-toggle="modal"
                        data-bs-target="#exampleModal"> 
+<<<<<<< HEAD
+                        <button class=" btn btn-primary ms-5" style="border-radius: 10px;height: 50px;">FINALIZAR COMPRA</button> </a>
+                    
+=======
                         <button class=" btn btn-primary" style="border-radius: 10px;height: 50px;">FINALIZAR COMPRA</button> </a>
                     <button class=" btn btn-danger" style="border-radius: 10px !important;height: 50px;">CANCELAR</button>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 </div>
             </div>
             <!<!-- RESUMEN DE COMPRA FINAL -->
@@ -333,6 +392,33 @@
                 </button>
 
             </div>
+<<<<<<< HEAD
+            <!<!-- REDES -->
+            <div class="sticky-container">
+                <ul class="sticky">
+                    <li style="box-shadow: 10px 20px 20px blue; border-radius: 15px;background-color: blue">
+                        <img class="" src="img/facebook.png" width="32" height="32" >
+                        <p class=" text-white"><a href="https://www.facebook.com/veterinariahuellitasbarranca"  target="_blank" class="text-white"> <b> Huellitas<br class="">Facebook</b></a></p>
+                    </li>
+                    <li style="box-shadow: 0px 10px 20px cyan;border-radius: 15px;background-color: aqua">
+                        <img src="img/twitter.png" width="32" height="32">
+                        <p class="text-white"><a href="https://twitter.com/huellitas_vet1" target="_blank" class=""><b> Huellitas<br>Twiter</b></a></p>
+                    </li>
+
+                    <li style="box-shadow: 0px 10px 20px red;border-radius: 15px;background-color: #E5110A">
+                        <img src="img/youtubenegro.png" width="32" height="32">
+                        <p class="text-white"><a href="https://www.youtube.com/channel/UC0JKjMXyVrfop-2mwC8lZ8w" target="_blank" class="text-white"> <b> Suscribete<br>YouYube </b></a></p>
+                    </li>
+                    <li style="box-shadow: 0px 10px 20px #00ff00;border-radius: 15px;background-color: greenyellow">
+                        <img src="img/whatssapredes.png" width="32" height="32">
+                        <p class="text-white"><a href="https://api.whatsapp.com/send?phone=+935982848&text=!Hola!,%20%20Quisiera%20contactarme%20con%20la%20Cl%C3%ADnica%20veterinaria%20Huellitas%20%20" target="_blank" class=""> <b> Huellitas<br>Contactanos! </b></a></p>
+                    </li>
+
+                </ul>
+            </div>
+            <!<!-- REDES FIN -->
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
             <!<!-- END ADICIONAL PRODUCTOS -->
             <!<!-- METODO DE PAGO -->
@@ -522,7 +608,15 @@
                                 </div>
 
                                 <div class="col-12 mt-3 d-flex">
+<<<<<<< HEAD
+                                    
+                                    <a href="reporteclientes.jsp" type="submit" class="btn btn-danger m-auto ms-" style="margin-left: 100px;width: 250px" >
+                                          
+                                       
+                                        Pagar</a>
+=======
                                     <button type="submit" class="btn btn-danger m-auto ms-" style="margin-left: 100px;width: 250px" >Pagar</button>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                                     <button type="submit" class="btn btn-warning m-auto ms-2" style="width: 250px" >Cancelar</button>
 
                                 </div>
@@ -631,7 +725,11 @@
                                     <img src="img/entrega.png" class=" img-fluid" alt="..." width="50px" height="50px">
                                     <div class="card-body">
                                         <h5 class="card-title d-inline-flex text-center">Despacho Programado</h5>
+<<<<<<< HEAD
+                                        <p class="card-text text-capitalize">Desde el 11 de Octubre a partir de S/95.00</p>
+=======
                                         <p class="card-text text-capitalize">Desde el 32 de diciembre a partir de S/95.00</p>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                                     </div>
                                 </div>
                             </div>
@@ -640,7 +738,11 @@
                                     <img src="img/supermercado.png" class=" img-fluid" alt="..." width="50px" height="50px">
                                     <div class="card-body">
                                         <h5 class="card-title">Retiro en Tienda</h5>
+<<<<<<< HEAD
+                                        <p class="card-text">Despues de 1 dia en efectuar la compra</p>
+=======
                                         <p class="card-text">Desde el 34 de noviembre</p>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                                         <a href="" class="ms-3">Ver Tiendas</a>
                                     </div>
                                 </div>

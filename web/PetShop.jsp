@@ -11,7 +11,11 @@
     HttpSession ses = request.getSession();
     int codigo = 0;
     
+<<<<<<< HEAD
+    if (ses.getAttribute("id") != null) {
+=======
     if(ses.getAttribute("id")!=null){
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         codigo = Integer.parseInt(ses.getAttribute("id").toString());
     }
 
@@ -25,6 +29,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
         <link href="Css/Petshopcss.css" rel="stylesheet" type="text/css"/>
+<<<<<<< HEAD
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <title>JSP Page</title>
     </head>
     <body>
@@ -73,7 +81,11 @@
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">${nombre} ${apellido}</a>
                                 <ul class="dropdown-menu">
                                     <img src="img/user64.png" width="90px"height="90px"style="margin-left: 80px">
+<<<<<<< HEAD
+
+=======
                                     
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#"> <b>${email}</b></a></li>
                                     <li><a class="dropdown-item" href="Cliente.jsp"> <b>Configuración</b></a></li>
@@ -259,6 +271,35 @@
                     </li>
                 </ul>
             </nav>
+<<<<<<< HEAD
+            <!<!-- REDES INICIO -->
+            <div class="sticky-container">
+                <ul class="sticky">
+                    <li style="box-shadow: 10px 20px 20px blue; border-radius: 15px;background-color: blue">
+                        <img class="" src="img/facebook.png" width="32" height="32" >
+                        <p class=" text-white"><a href="https://www.facebook.com/veterinariahuellitasbarranca"  target="_blank" class="text-white"> <b> Huellitas<br class="">Facebook</b></a></p>
+                    </li>
+                    <li style="box-shadow: 0px 10px 20px cyan;border-radius: 15px;background-color: aqua">
+                        <img src="img/twitter.png" width="32" height="32">
+                        <p class="text-white"><a href="https://twitter.com/huellitas_vet1" target="_blank" class=""><b> Huellitas<br>Twiter</b></a></p>
+                    </li>
+
+                    <li style="box-shadow: 0px 10px 20px red;border-radius: 15px;background-color: #E5110A">
+                        <img src="img/youtubenegro.png" width="32" height="32">
+                        <p class="text-white"><a href="https://www.youtube.com/channel/UC0JKjMXyVrfop-2mwC8lZ8w" target="_blank" class="text-white"> <b> Suscribete<br>YouYube </b></a></p>
+                    </li>
+                    <li style="box-shadow: 0px 10px 20px #00ff00;border-radius: 15px;background-color: greenyellow">
+                        <img src="img/whatssapredes.png" width="32" height="32">
+                        <p class="text-white"><a href="https://api.whatsapp.com/send?phone=+935982848&text=!Hola!,%20%20Quisiera%20contactarme%20con%20la%20Cl%C3%ADnica%20veterinaria%20Huellitas%20%20" target="_blank" class=""> <b> Huellitas<br>Contactanos! </b></a></p>
+                    </li>
+
+                </ul>
+            </div>
+            <!<!-- REDES FIN -->                 
+
+
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             <!------------------------->
         </header>
         <!--MODAL DELIVERY-->
@@ -291,6 +332,9 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+
+=======
         <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
              aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -309,6 +353,7 @@
                 </div>
             </div>
         </div>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <!<!-- END DELIVERY -->
         <!<!-- carrusel slider START -->
         <div class="container text-center mt-2">
@@ -360,10 +405,23 @@
                             <p class="text-center"></p><label>S/150.52</label><input name="txt_precio" value="150.52" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/160.00</span>
                             <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
                             <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+<<<<<<< HEAD
+
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+
+
+                        </div>
+
+                    </form>
+                </div>   
+
+
+=======
                             <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
                         </div>
                     </form>
                 </div>                
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-lg-3 col-md-2  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan3.jpg" class="card-img-top" alt="...">
@@ -372,10 +430,23 @@
                             <p class="text-center"></p><label>S/250.00</label><input name="txt_precio" value="250.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/280.00</span>
                             <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
                             <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
+<<<<<<< HEAD
+
+                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+
+=======
                             <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
                         </div>
                     </form>
                 </div>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-lg-3 col-md-2   border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan4.jpg" class="card-img-top" alt="...">
@@ -388,6 +459,11 @@
                         </div>
                     </form>
                 </div>
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-3 col-lg-3 col-md-2 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan5.jpg" class="card-img-top" alt="...">
@@ -400,8 +476,19 @@
                         </div>
                     </form>
                 </div>
+<<<<<<< HEAD
+
+
             </div>
         </div>
+
+
+
+
+=======
+            </div>
+        </div>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <!--2-->
         <div class=" container  mt-4  ">
             <div class="row"> 
@@ -564,6 +651,16 @@
         <br><br><br><br> 
         <!-- END TIENDA PERROS -->
         <!--FOOTER-->
+<<<<<<< HEAD
+        <div class="container-fluid  py-5 bg-dark border border-1 border-white "style="background-color: #8E44AD">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 m-auto">
+                    <h4 class="fs-2  text-white m-auto">LOCALES Y CONTACTO</h4>
+
+                    <ul class="list-unstyled horarios_p">
+                        <li>
+                            <p class="mb-0 text-white">Av. República de Panamá 6584, Barranco</p>
+=======
 <div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p"style="background-color: #8E44AD">
             <div class="row">
                 <div class="col-md-4 ">
@@ -572,6 +669,7 @@
                     <ul class="list-unstyled mb-0 ms-5">
                         <li>
                             <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             <p class="mb-0">998 195 193</p>
                             <p>01 446 6179 | 01 637 5132</p>
                         </li>
@@ -604,7 +702,11 @@
 
                 <div class="col-md-4">
                     <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
+<<<<<<< HEAD
+                    <ul class="list-unstyled mb-0 horarios_p">
+=======
                     <ul class="list-unstyled mb-0">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <li>
                             <p class="mb-0 font-weight-bold">Barranco</p>
                             <p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
@@ -634,20 +736,32 @@
 
                 <!--//////////////////-->
 
+<<<<<<< HEAD
+                <div class="col-md-3 ms-5 mt-2">
+=======
                 <div class="col-md-2">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                     <img src="img/Logo_principal.png">
                 </div>
 
             </div>
 
         </div>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <footer class="bg-dark text-white p-3">
             <div class="container">
                 <div class="row">
                     <ul class="nav justify-content-center">
                         <li class="nav-item -">
                             <a class="nav-link active" aria-current="page" href="#">
+<<<<<<< HEAD
+                                <i class="fab fa-facebook" style="box-shadow: 0px 12px 20px #245269" > </i> 
+=======
                                 <i class="fab fa-facebook" > </i> 
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             </a>
                         </li>
                         <li class="nav-item -">
@@ -676,7 +790,11 @@
             <div class="row d-flex justify-content-center align-items-center">
 
                 <img src="img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;"  alt="">
+<<<<<<< HEAD
+                <a class="text-center text-capitalize">libro de reclamaciones</a>
+=======
                 <p class="text-center text-capitalize">libro de reclamaciones</p>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             </div>
         </nav> 
         <!---->
@@ -686,8 +804,13 @@
     <!<!-- END FOOTER -->
 
 
+<<<<<<< HEAD
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+=======
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 </body>
 
 </html>

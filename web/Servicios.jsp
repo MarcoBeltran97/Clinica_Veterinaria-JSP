@@ -34,7 +34,11 @@
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
                         <li class="nav-item">
+<<<<<<< HEAD
+                            <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Home</a>
+=======
                             <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Inicio</a>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active  text-white" aria-current="page" href="Nosotros.jsp">Nosotros</a>
@@ -246,6 +250,80 @@
 
         <!--FINAL COLUMNA 3 SERVICIOS-->
 
+<<<<<<< HEAD
+        <div class="container-fluid  py-5 bg-dark border border-1 border-white "style="background-color: #8E44AD">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 m-auto">
+                <h4 class="fs-2  text-white m-auto">LOCALES Y CONTACTO</h4>
+
+                <ul class="list-unstyled horarios_p">
+                    <li>
+                        <p class="mb-0 text-white">Av. República de Panamá 6584, Barranco</p>
+                        <p class="mb-0 text-white">998 195 193</p>
+                        <p class="">01 446 6179 | 01 637 5132</p>
+                    </li>
+                    <li>
+                        <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                        <p class="mb-0">998 195 193</p>
+                        <p class="text-white">01 446 6179 | 01 637 5132</p>
+                    </li>
+                    <li>
+                        <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                        <p class="mb-0">998 195 193</p>
+                        <p>01 446 6179 | 01 637 5132</p>
+                    </li>
+                    <li>
+                        <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                        <p class="mb-0">998 195 193</p>
+                        <p>01 446 6179 | 01 637 5132</p>
+                    </li>
+                    <li>
+                        <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+                        <p class="mb-0">998 195 193</p>
+                        <p>01 446 6179 | 01 637 5132</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+                <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
+                <ul class="list-unstyled mb-0 horarios_p">
+                    <li>
+                        <p class="mb-0 font-weight-bold">Barranco</p>
+                        <p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
+                        <p>EMERGENCIAS 24hrs</p>
+                    </li>
+                    <li>
+                        <p class="mb-0 font-weight-bold">Lince</p>
+                        <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                        <p>Domingos - 9 a.m. - 6 p.m.</p>
+                    </li>
+                    <li>
+                        <p class="mb-0 font-weight-bold">San Borja</p>
+                        <p>Atención: Lunes a Domingo - 8 a.m. - 8 p.m.</p>
+                    </li>
+                    <li>
+                        <p class="mb-0 font-weight-bold">Los Olivos</p>
+                        <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                        <p>Domingos - 9 a.m. - 6 p.m.</p>
+                    </li>
+                    <li>
+                        <p class="mb-0 font-weight-bold">San Juan de Miraflores</p>
+                        <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                        <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!--//////////////////-->
+
+            <div class="col-md-3 ms-5 mt-2">
+                <img src="img/Logo_principal.png">
+=======
         <div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p mt-5"style="background-color: #8E44AD">
             <div class="row">
                 <div class="col-md-4 ">
@@ -320,10 +398,39 @@
                     <img src="img/Logo_principal.png">
                 </div>
 
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             </div>
 
         </div>
 
+<<<<<<< HEAD
+    </div>
+       <div class="sticky-container">
+        <ul class="sticky">
+            <li style="box-shadow: 10px 20px 20px blue; border-radius: 15px;background-color: blue">
+                <img class="" src="img/facebook.png" width="32" height="32" >
+                <p class=" text-white"><a href="https://www.facebook.com/veterinariahuellitasbarranca"  target="_blank" class="text-white"> <b> Huellitas<br class="">Facebook</b></a></p>
+            </li>
+            <li style="box-shadow: 0px 10px 20px cyan;border-radius: 15px;background-color: aqua">
+                <img src="img/twitter.png" width="32" height="32">
+                <p class="text-white"><a href="https://twitter.com/huellitas_vet1" target="_blank" class=""><b> Huellitas<br>Twiter</b></a></p>
+            </li>
+           
+            <li style="box-shadow: 0px 10px 20px red;border-radius: 15px;background-color: #E5110A">
+                <img src="img/youtubenegro.png" width="32" height="32">
+                <p class="text-white"><a href="https://www.youtube.com/channel/UC0JKjMXyVrfop-2mwC8lZ8w" target="_blank" class="text-white"> <b> Suscribete<br>YouYube </b></a></p>
+            </li>
+            <li style="box-shadow: 0px 10px 20px #00ff00;border-radius: 15px;background-color: greenyellow">
+                <img src="img/whatssapredes.png" width="32" height="32">
+                <p class="text-white"><a href="https://api.whatsapp.com/send?phone=+935982848&text=!Hola!,%20%20Quisiera%20contactarme%20con%20la%20Cl%C3%ADnica%20veterinaria%20Huellitas%20%20" target="_blank" class=""> <b> Huellitas<br>Contactanos! </b></a></p>
+            </li>
+
+        </ul>
+    </div>
+    <!<!-- REDES FIN -->
+
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
 
         <footer class="bg-dark text-white p-3 ">
@@ -361,7 +468,11 @@
             <div class="row d-flex justify-content-center align-items-center">
 
                 <img src="img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;"  alt="">
+<<<<<<< HEAD
+                <a class="text-center text-capitalize">libro de reclamaciones</a>
+=======
                 <p class="text-center text-capitalize">libro de reclamaciones</p>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             </div>
         </nav> 
         <!---->

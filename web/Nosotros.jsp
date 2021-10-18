@@ -37,9 +37,19 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<<<<<<< HEAD
+                     
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
+                         <li class="nav-item ">
+                            <a class="nav-link" href="#contenedor-formulario"style="font-family: 'Roboto', sans-serif;">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white"style="font-family: 'Roboto', sans-serif;" aria-current="page" href="Index.jsp">Home</a>
+=======
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
                         <li class="nav-item">
                             <a class="nav-link active text-white"style="font-family: 'Roboto', sans-serif;" aria-current="page" href="Index.jsp">Inicio</a>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="Servicios.jsp"style="font-family: 'Roboto', sans-serif;">Servicios</a>
@@ -48,17 +58,47 @@
                             <a class="nav-link" href="PetShop.jsp"style="font-family: 'Roboto', sans-serif;">Pet Shop</a>
                         </li>
 
+<<<<<<< HEAD
+                       
+=======
                         <li class="nav-item">
                             <a class="text-reset  align-items-center nav-link  " data-bs-toggle="offcanvas"
                                href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">
                                 <span class="text-white"style="font-family: 'Roboto', sans-serif;">Login </span>
                             </a>
                         </li>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                     </ul>
                 </div>
             </div>
         </nav>
+<<<<<<< HEAD
+      <div class="sticky-container">
+        <ul class="sticky">
+            <li style="box-shadow: 10px 20px 20px blue; border-radius: 15px;background-color: blue">
+                <img class="" src="img/facebook.png" width="32" height="32" >
+                <p class=" text-white"><a href="https://www.facebook.com/veterinariahuellitasbarranca"  target="_blank" class="text-white"> <b> Huellitas<br class="">Facebook</b></a></p>
+            </li>
+            <li style="box-shadow: 0px 10px 20px cyan;border-radius: 15px;background-color: aqua">
+                <img src="img/twitter.png" width="32" height="32">
+                <p class="text-white"><a href="https://twitter.com/huellitas_vet1" target="_blank" class=""><b> Huellitas<br>Twiter</b></a></p>
+            </li>
+           
+            <li style="box-shadow: 0px 10px 20px red;border-radius: 15px;background-color: #E5110A">
+                <img src="img/youtubenegro.png" width="32" height="32">
+                <p class="text-white"><a href="https://www.youtube.com/channel/UC0JKjMXyVrfop-2mwC8lZ8w" target="_blank" class="text-white"> <b> Suscribete<br>YouYube </b></a></p>
+            </li>
+            <li style="box-shadow: 0px 10px 20px #00ff00;border-radius: 15px;background-color: greenyellow">
+                <img src="img/whatssapredes.png" width="32" height="32">
+                <p class="text-white"><a href="https://api.whatsapp.com/send?phone=+935982848&text=!Hola!,%20%20Quisiera%20contactarme%20con%20la%20Cl%C3%ADnica%20veterinaria%20Huellitas%20%20" target="_blank" class=""> <b> Huellitas<br>Contactanos! </b></a></p>
+            </li>
 
+        </ul>
+    </div>
+    <!<!-- REDES FIN -->
+=======
+
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
 
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -214,9 +254,15 @@
             </div>
         </div>
         <br><br><br><br><br>
+<<<<<<< HEAD
+        <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5" >
+            <div id="bg-contactos" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
+=======
         <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5">
             <div id="bg-contactos">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <path fill="#1b2a4e" fill-opacity="1"
                       d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
                 </path>
@@ -272,6 +318,25 @@
                             <i class="fab fa-facebook"> </i>
                         </a>
                     </li>
+<<<<<<< HEAD
+                  <li class="nav-item -">
+                        <a class="nav-link " style="font-family: 'Roboto', sans-serif;" href="#">Terminos y condiciones</a>
+                    </li>
+                    <li class="nav-item -">
+                        <a class="nav-link " style="font-family: 'Roboto', sans-serif;" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item -">
+                        <a class="nav-link " style="font-family: 'Roboto', sans-serif;" href="#">Politicas de Privacidad</a>
+                    </li>
+                    <li class="nav-item -">
+                        <a class="nav-link  "style="font-family: 'Roboto', sans-serif;" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item -">
+                        <a class="nav-link "style="font-family: 'Roboto', sans-serif;" href="#">Marcas</a>
+                    </li>
+                    <li class="nav-item -">
+                        <a class="nav-link "style="font-family: 'Roboto', sans-serif;" href="#">Creadores</a>
+=======
                     <li class="nav-item -">
                         <a class="nav-link h2 text" href="#">Terminos y condiciones</a>
                     </li>
@@ -289,16 +354,24 @@
                     </li>
                     <li class="nav-item -">
                         <a class="nav-link" href="#">Creadores</a>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                     </li>
 
                 </ul>
 
             </div>
         </div>
+<<<<<<< HEAD
+        <div class="row d-flex justify-content-center align-items-center mt-2">
+
+            <img src="img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;" alt="">
+            <a class="text-center text-capitalize" style="font-family: 'Roboto', sans-serif;">libro de reclamaciones</a>
+=======
         <div class="row d-flex justify-content-center align-items-center">
 
             <img src="../Img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;" alt="">
             <p class="text-center text-capitalize">libro de reclamaciones</p>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         </div>
     </nav>
     <!---->
