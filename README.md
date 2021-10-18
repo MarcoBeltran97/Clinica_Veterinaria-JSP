@@ -7,7 +7,7 @@ Actualizaciones
 Implementación de una pagina Web con JAVA JSP (JavaServer Pages) usando CSS y Bootstrap 5.
 
 2da. Dia 06/09/2021:
-Se implementa el Login con MySQL, se usará en 3 capas con MVC, usando Java Servlet y la versión del connector es la 8.0.23
+Se implementa el Login con MySQL, se usará en 3 capas con MVC, usando Java Servlet y la versión del mysql connector es la 8.0.23
 
 3ra. Dia 14/09/2021:
 Se implementa el registro del Cliente usando Stored Procedure.
@@ -25,4 +25,4 @@ Se agregan algunas validaciones para el producto según el cliente, y se agrega 
 Suma de los precios según el cliente que compra y se completa el mantenimiento del cliente.
 
 8vo. Dia 18/10/2021:
-Se implementa el reporte para el cliente y su producto usando JasperReports.
+Se implementa el reporte para el cliente y su producto usando JasperReports, se utilizó la version de iReport 5.5.0
