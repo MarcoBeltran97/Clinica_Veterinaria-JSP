@@ -106,6 +106,8 @@ a {
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 .horarios_p li {
     color: white !important;
 }
@@ -178,6 +180,16 @@ a {
     justify-content: center;
   }
   
+=======
+.horarios_p ul li {
+    color: white !important;
+}
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+.horarios_p ul li {
+    color: white !important;
+}
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 .horarios_p ul li {
     color: white !important;

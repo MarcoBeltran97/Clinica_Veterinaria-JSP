@@ -121,7 +121,15 @@ height: 60rem;
 }
 /*CARD*/
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 .horarios_p li {
+=======
+.horarios_p ul li {
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+.horarios_p ul li {
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 .horarios_p ul li {
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
@@ -140,8 +148,14 @@ line-height: 1.6;
     
     font-weight: 100;
 }
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+
+=======
 
 
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 .containerd .card2 img{
 width: 330px;
 height: 220px;
@@ -180,6 +194,7 @@ height: 30px;
     -webkit-transform:scale(1.3);transform:scale(1.2);
    
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 /*REDES*/
 .sticky-container{
@@ -250,5 +265,48 @@ height: 30px;
     justify-content: center;
   }
   
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+
+.containerd .card2 img{
+width: 330px;
+height: 220px;
+}
+.containerd .card2 h4{
+font-weight: 600;
+}
+.containerd .card2 p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.containerd .card2 button{
+font-weight: 900;
+background-color: chartreuse;
+border-radius: 8px;
+margin-top: 10px;
+width: 190px;
+height: 30px;
+}
+.imgwhat{
+    width: 30px !important;
+    height: 30px !important; 
+}
+.botones{
+font-weight: 900;
+background-color: chartreuse;
+border-radius: 8px;
+margin-top: 10px;
+width: 190px;
+height: 30px;
+}
+.botones:hover{
+    
+    box-shadow: 0px 10px 20px;
+    -webkit-transform:scale(1.3);transform:scale(1.2);
+   
+}
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377

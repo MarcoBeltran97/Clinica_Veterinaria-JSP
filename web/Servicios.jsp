@@ -35,7 +35,15 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
                         <li class="nav-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
                             <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Home</a>
+=======
+                            <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Inicio</a>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+                            <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Inicio</a>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
                             <a class="nav-link active  text-white" aria-current="page" href="Index.jsp">Inicio</a>
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
@@ -60,6 +68,7 @@
         </nav>
         <!--INICIO SERVICIOS HUELLITAS VETERINARIA-->
         <div class="container mt-3 text-primary">
+<<<<<<< HEAD
 
             <h1 class="  " style="font-family: 'Roboto', sans-serif;" class="">SERVICIOS </h1>
 
@@ -79,6 +88,27 @@
          
 
         </div>
+=======
+
+            <h1 class="  " style="font-family: 'Roboto', sans-serif;" class="">SERVICIOS </h1>
+
+        </div>
+        <div class="container mt-2">
+
+            <p class="  " style="font-family: 'Roboto', sans-serif;" class="">
+                En Clínica Veterinaria Ejea ofrecemos una asistencia completa y de calidad a tu mascota. Nuestro principal objetivo es mantener la salud y el bienestar de nuestros animales y ayudarlos a restablecerse cuando están enfermos. Para ello, contamos con un personal altamente cualificado e instalaciones modernas y bien equipadas.
+
+
+            </p>
+
+        </div>
+       
+        <div class="container-fluid text-center mt-2 text-primary">
+
+         
+
+        </div>
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
       
 
         <!--COLUMNA 1 SERVICIOS-->
@@ -147,6 +177,10 @@
                             <div class=" mt-2 text-center">
                                 <a href="https://wa.link/oanhxg">
                                     <button class="text-center  botones" type="submit">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
 
                                         <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
                                         Whatssap </button>
@@ -163,6 +197,7 @@
                             <div class=" text-center">
                                 <a href="https://wa.link/oanhxg">
                                     <button class="text-center  botones" type="submit">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
                                         <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
                                         Whatssap </button>
@@ -173,10 +208,83 @@
                 </div>
                 <div class="col">
                     <div class="">
+<<<<<<< HEAD
+                        <img src="img/baño-y-peluquería-canina.jpeg" class="card-img-top" alt="..."style="border-radius: 20px;" height="270px">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-2" style="font-family: 'Roboto', sans-serif;"><b>PELUQUERIA CANINA </b> </h5>
+                            <div class=" text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
                         <img src="img/cirujia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;"height="260px">
                         <div class="card-body">
                             <h5 class=" text-center fs-4 " style="font-family: 'Roboto', sans-serif;"><b>CIRUJIA </b> </h5>
                             <div class="text-center">
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<<<<<<< HEAD
+                <div class="col">
+                    <div class="">
+<<<<<<< HEAD
+                        <img src="img/baño-y-peluquería-canina.jpeg" class="card-img-top" alt="..."style="border-radius: 20px;" height="270px">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-2" style="font-family: 'Roboto', sans-serif;"><b>PELUQUERIA CANINA </b> </h5>
+                            <div class=" text-center">
+=======
+                        <img src="img/cirujia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;"height="260px">
+                        <div class="card-body">
+                            <h5 class=" text-center fs-4 " style="font-family: 'Roboto', sans-serif;"><b>CIRUJIA </b> </h5>
+                            <div class="text-center">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+
+            </div>
+        </div>
+        <!--FINAL COLUMNA2 SERVICIOS-->
+        <!--COLUMNA 3 SERVICIOS-->
+        <div class="container mt-3"> 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="">
+                        <img src="img/radiologia.jpeg" class="card-img-top" alt="..." style="border-radius: 20px;">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>RADIOLOGIA </b> </h5>
+                            <div class=" mt-2 text-center">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+                                <a href="https://wa.link/oanhxg">
+                                    <button class="text-center  botones" type="submit">
+
+                                        <img class="img-fluid imgwhat" src="img/whatsapp.png" alt="">
+                                        Whatssap </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<<<<<<< HEAD
+                <div class="col">
+                    <div class="">
+<<<<<<< HEAD
+                        <img src="img/cirujia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;"height="260px">
+                        <div class="card-body">
+                            <h5 class=" text-center fs-4 " style="font-family: 'Roboto', sans-serif;"><b>CIRUJIA </b> </h5>
+                            <div class="text-center">
+=======
+                        <img src="img/diagnostico.jpg" class="card-img-top" alt="..."style="border-radius: 20px;" height="260px">
+                        <div class="">
+                            <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>DIAGNOSTICO </b> </h5>
+                            <div class=" mt-2 text-center">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                                 <a href="https://wa.link/oanhxg">
                                     <button class="text-center  botones" type="submit">
 
@@ -196,6 +304,18 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="">
+<<<<<<< HEAD
+=======
+
+            </div>
+        </div>
+        <!--FINAL COLUMNA2 SERVICIOS-->
+        <!--COLUMNA 3 SERVICIOS-->
+        <div class="container mt-3"> 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <img src="img/radiologia.jpeg" class="card-img-top" alt="..." style="border-radius: 20px;">
                         <div class="">
                             <h5 class=" text-center fs-4 mt-1" style="font-family: 'Roboto', sans-serif;"><b>RADIOLOGIA </b> </h5>
@@ -228,6 +348,8 @@
                 </div>
                 <div class="col">
                     <div class="">
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <img src="img/oncologia.jpg" class="card-img-top" alt="..."style="border-radius: 20px;"height="250px">
                         <div class="card-body">
                             <h5 class=" text-center fs-4 " style="font-family: 'Roboto', sans-serif;"><b>ONCOLOGIA </b> </h5>
@@ -250,6 +372,8 @@
 
         <!--FINAL COLUMNA 3 SERVICIOS-->
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
         <div class="container-fluid  py-5 bg-dark border border-1 border-white "style="background-color: #8E44AD">
         <div class="row">
@@ -324,6 +448,10 @@
             <div class="col-md-3 ms-5 mt-2">
                 <img src="img/Logo_principal.png">
 =======
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p mt-5"style="background-color: #8E44AD">
             <div class="row">
                 <div class="col-md-4 ">
@@ -398,11 +526,19 @@
                     <img src="img/Logo_principal.png">
                 </div>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             </div>
 
         </div>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
     </div>
        <div class="sticky-container">
@@ -429,6 +565,10 @@
     </div>
     <!<!-- REDES FIN -->
 
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 

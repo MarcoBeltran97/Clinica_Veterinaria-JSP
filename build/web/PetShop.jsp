@@ -421,6 +421,12 @@
                         </div>
                     </form>
                 </div>                
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-lg-3 col-md-2  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
@@ -446,6 +452,12 @@
                         </div>
                     </form>
                 </div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-lg-3 col-md-2   border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
@@ -460,8 +472,14 @@
                     </form>
                 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-3 col-lg-3 col-md-2 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
@@ -652,6 +670,8 @@
         <!-- END TIENDA PERROS -->
         <!--FOOTER-->
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         <div class="container-fluid  py-5 bg-dark border border-1 border-white "style="background-color: #8E44AD">
             <div class="row">
                 <div class="col-lg-4 col-md-12 m-auto">
@@ -661,6 +681,10 @@
                         <li>
                             <p class="mb-0 text-white">Av. República de Panamá 6584, Barranco</p>
 =======
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 <div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p"style="background-color: #8E44AD">
             <div class="row">
                 <div class="col-md-4 ">
@@ -669,6 +693,12 @@
                     <ul class="list-unstyled mb-0 ms-5">
                         <li>
                             <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             <p class="mb-0">998 195 193</p>
                             <p>01 446 6179 | 01 637 5132</p>
@@ -698,12 +728,20 @@
 
                 </div>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
 
                 <div class="col-md-4">
                     <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <ul class="list-unstyled mb-0 horarios_p">
+=======
+                    <ul class="list-unstyled mb-0">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
                     <ul class="list-unstyled mb-0">
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
@@ -737,7 +775,48 @@
                 <!--//////////////////-->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div class="col-md-3 ms-5 mt-2">
+=======
+                <div class="col-md-2">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+
+
+                <div class="col-md-4">
+                    <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <p class="mb-0 font-weight-bold">Barranco</p>
+                            <p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
+                            <p>EMERGENCIAS 24hrs</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">Lince</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p>Domingos - 9 a.m. - 6 p.m.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">San Borja</p>
+                            <p>Atención: Lunes a Domingo - 8 a.m. - 8 p.m.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">Los Olivos</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p>Domingos - 9 a.m. - 6 p.m.</p>
+                        </li>
+                        <li>
+                            <p class="mb-0 font-weight-bold">San Juan de Miraflores</p>
+                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
+                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--//////////////////-->
+
+                <div class="col-md-2">
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
                 <div class="col-md-2">
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
@@ -748,7 +827,13 @@
 
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 >>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <footer class="bg-dark text-white p-3">
@@ -805,8 +890,18 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+=======
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
+=======
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+>>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 =======
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    
