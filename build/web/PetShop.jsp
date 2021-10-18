@@ -11,11 +11,7 @@
     HttpSession ses = request.getSession();
     int codigo = 0;
     
-<<<<<<< HEAD
     if (ses.getAttribute("id") != null) {
-=======
-    if(ses.getAttribute("id")!=null){
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         codigo = Integer.parseInt(ses.getAttribute("id").toString());
     }
 
@@ -29,10 +25,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
         <link href="Css/Petshopcss.css" rel="stylesheet" type="text/css"/>
-<<<<<<< HEAD
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <title>JSP Page</title>
     </head>
     <body>
@@ -81,11 +74,7 @@
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">${nombre} ${apellido}</a>
                                 <ul class="dropdown-menu">
                                     <img src="img/user64.png" width="90px"height="90px"style="margin-left: 80px">
-<<<<<<< HEAD
 
-=======
-                                    
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#"> <b>${email}</b></a></li>
                                     <li><a class="dropdown-item" href="Cliente.jsp"> <b>Configuración</b></a></li>
@@ -271,7 +260,6 @@
                     </li>
                 </ul>
             </nav>
-<<<<<<< HEAD
             <!<!-- REDES INICIO -->
             <div class="sticky-container">
                 <ul class="sticky">
@@ -298,8 +286,6 @@
             <!<!-- REDES FIN -->                 
 
 
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             <!------------------------->
         </header>
         <!--MODAL DELIVERY-->
@@ -332,28 +318,7 @@
             </div>
         </div>
 
-<<<<<<< HEAD
 
-=======
-        <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">DELIVERY</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" name="btn_close"></button>
-                    </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                            Close
-                        </button>
-                        <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                </div>
-            </div>
-        </div>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <!<!-- END DELIVERY -->
         <!<!-- carrusel slider START -->
         <div class="container text-center mt-2">
@@ -405,7 +370,6 @@
                             <p class="text-center"></p><label>S/150.52</label><input name="txt_precio" value="150.52" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/160.00</span>
                             <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
                             <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-<<<<<<< HEAD
 
                             <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
 
@@ -416,18 +380,6 @@
                 </div>   
 
 
-=======
-                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                        </div>
-                    </form>
-                </div>                
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-lg-3 col-md-2  border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan3.jpg" class="card-img-top" alt="...">
@@ -436,7 +388,6 @@
                             <p class="text-center"></p><label>S/250.00</label><input name="txt_precio" value="250.00" type="hidden">           <span class="ms-4" style="text-decoration: line-through;">S/280.00</span>
                             <p><input name="txt_idcliente" value="${id}" type="hidden"></p>
                             <a href="#" class="fs-6 link-primary"><span class="text-capitalize">Ver Disponibilidad en Tiendas</span> </a>
-<<<<<<< HEAD
 
                             <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
 
@@ -447,18 +398,6 @@
                 </div>
 
 
-=======
-                            <button class="btn btn-warning ms-5 btn-lg mt-2 fs-6 fst-normal" name="btn_comprar"> Comprar</button>
-                        </div>
-                    </form>
-                </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-lg-3 col-md-2   border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan4.jpg" class="card-img-top" alt="...">
@@ -471,17 +410,8 @@
                         </div>
                     </form>
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="card col-3 col-lg-3 col-md-2 border-1 - rounded-2 car_efecto" style="width: 18rem; ">
                     <form method="post" action="/Veterinaria_Huellitas/ProductoController" class="">
                         <img src="img/ricocan5.jpg" class="card-img-top" alt="...">
@@ -494,7 +424,6 @@
                         </div>
                     </form>
                 </div>
-<<<<<<< HEAD
 
 
             </div>
@@ -503,10 +432,6 @@
 
 
 
-=======
-            </div>
-        </div>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <!--2-->
         <div class=" container  mt-4  ">
             <div class="row"> 
@@ -669,9 +594,6 @@
         <br><br><br><br> 
         <!-- END TIENDA PERROS -->
         <!--FOOTER-->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         <div class="container-fluid  py-5 bg-dark border border-1 border-white "style="background-color: #8E44AD">
             <div class="row">
                 <div class="col-lg-4 col-md-12 m-auto">
@@ -680,26 +602,6 @@
                     <ul class="list-unstyled horarios_p">
                         <li>
                             <p class="mb-0 text-white">Av. República de Panamá 6584, Barranco</p>
-=======
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-<div class="container-fluid  py-5 bg-dark border border-1 border-white horarios_p"style="background-color: #8E44AD">
-            <div class="row">
-                <div class="col-md-4 ">
-                    <h4 class="fs-2 text-capitalize text-white ms-5">LOCALES Y CONTACTO</h4>
-
-                    <ul class="list-unstyled mb-0 ms-5">
-                        <li>
-                            <p class="mb-0">Av. República de Panamá 6584, Barranco</p>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             <p class="mb-0">998 195 193</p>
                             <p>01 446 6179 | 01 637 5132</p>
                         </li>
@@ -728,23 +630,11 @@
 
                 </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
 
                 <div class="col-md-4">
                     <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
-<<<<<<< HEAD
-<<<<<<< HEAD
                     <ul class="list-unstyled mb-0 horarios_p">
-=======
-                    <ul class="list-unstyled mb-0">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                    <ul class="list-unstyled mb-0">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <li>
                             <p class="mb-0 font-weight-bold">Barranco</p>
                             <p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
@@ -774,79 +664,21 @@
 
                 <!--//////////////////-->
 
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <div class="col-md-3 ms-5 mt-2">
-=======
-                <div class="col-md-2">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-
-
-                <div class="col-md-4">
-                    <h4 class="text-uppercase oswald fs-2 text-capitalize text-white">HORARIOS</h4>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <p class="mb-0 font-weight-bold">Barranco</p>
-                            <p class="mb-0">Atención: Lunes a Domingo - 7 a.m. - 8 p.m.</p>
-                            <p>EMERGENCIAS 24hrs</p>
-                        </li>
-                        <li>
-                            <p class="mb-0 font-weight-bold">Lince</p>
-                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
-                            <p>Domingos - 9 a.m. - 6 p.m.</p>
-                        </li>
-                        <li>
-                            <p class="mb-0 font-weight-bold">San Borja</p>
-                            <p>Atención: Lunes a Domingo - 8 a.m. - 8 p.m.</p>
-                        </li>
-                        <li>
-                            <p class="mb-0 font-weight-bold">Los Olivos</p>
-                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
-                            <p>Domingos - 9 a.m. - 6 p.m.</p>
-                        </li>
-                        <li>
-                            <p class="mb-0 font-weight-bold">San Juan de Miraflores</p>
-                            <p class="mb-0">Atención: Lunes a Sabado - 8 a.m. - 8 p.m.</p>
-                            <p class="mb-0">Domingos - 9 a.m. - 6 p.m.</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--//////////////////-->
-
-                <div class="col-md-2">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                <div class="col-md-2">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                     <img src="img/Logo_principal.png">
                 </div>
 
             </div>
 
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         <footer class="bg-dark text-white p-3">
             <div class="container">
                 <div class="row">
                     <ul class="nav justify-content-center">
                         <li class="nav-item -">
                             <a class="nav-link active" aria-current="page" href="#">
-<<<<<<< HEAD
                                 <i class="fab fa-facebook" style="box-shadow: 0px 12px 20px #245269" > </i> 
-=======
-                                <i class="fab fa-facebook" > </i> 
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             </a>
                         </li>
                         <li class="nav-item -">
@@ -875,11 +707,7 @@
             <div class="row d-flex justify-content-center align-items-center">
 
                 <img src="img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;"  alt="">
-<<<<<<< HEAD
                 <a class="text-center text-capitalize">libro de reclamaciones</a>
-=======
-                <p class="text-center text-capitalize">libro de reclamaciones</p>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
             </div>
         </nav> 
         <!---->
@@ -889,23 +717,8 @@
     <!<!-- END FOOTER -->
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-=======
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 </body>
 
 </html>

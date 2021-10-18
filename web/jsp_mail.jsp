@@ -19,19 +19,7 @@
     String contrasenia = "Grupo2WEB/";
     String asunto = "NOS QUIEREN CONTACTAR";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     String mensajeFinal = "La persona " + nombre + "\n" + "con numero de telefono " + telefono + "\n" + "correo " + email  + " se quiere poner en contacto con nosotros" + "\n" +"Su mensaje es: " + mensaje;
-=======
-    String mensajeFinal = "La persona " + nombre + " con numero de telefono " + telefono + " y correo " + email + " se quiere poner en contacto con nosotros. Su mensaje es: " + mensaje;
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-    String mensajeFinal = "La persona " + nombre + " con numero de telefono " + telefono + " y correo " + email + " se quiere poner en contacto con nosotros. Su mensaje es: " + mensaje;
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-    String mensajeFinal = "La persona " + nombre + " con numero de telefono " + telefono + " y correo " + email + " se quiere poner en contacto con nosotros. Su mensaje es: " + mensaje;
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
     MimeMessage mail = new MimeMessage(sesion);
 
@@ -62,38 +50,14 @@
 
 
                     <div class="modal-body d-block text-center">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                         <img src="img/check_animado.gif" class="img-fluid" alt="" width="150px">   
-=======
-                        <img src="img/cheque3.png" class="img-fluid" alt="">   
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                        <img src="img/cheque3.png" class="img-fluid" alt="">   
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                        <img src="img/cheque3.png" class="img-fluid" alt="">   
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <h2 class="mt-2 fs-2">MENSAJE ENVIADO</h2>
                         <p class="">Nos Pondremos en contacto contigo</p>
                     </div>
 
                     <div class="modal-body text-center wrap">
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                         <a href="Nosotros.jsp" >
-=======
-                        <a href="../navbar.html" >
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                        <a href="../navbar.html" >
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                        <a href="../navbar.html" >
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                             <button style="width: 250px;height: 50px" type="button" class="btn btn-success " id="button">Aceptar</button>
                         </a>
                     </div>

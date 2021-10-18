@@ -37,9 +37,6 @@
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                      
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
                          <li class="nav-item ">
@@ -47,21 +44,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active text-white"style="font-family: 'Roboto', sans-serif;" aria-current="page" href="Index.jsp">Home</a>
-=======
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white"style="font-family: 'Roboto', sans-serif;" aria-current="page" href="Index.jsp">Inicio</a>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white"style="font-family: 'Roboto', sans-serif;" aria-current="page" href="Index.jsp">Inicio</a>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white"style="font-family: 'Roboto', sans-serif;" aria-current="page" href="Index.jsp">Inicio</a>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="Servicios.jsp"style="font-family: 'Roboto', sans-serif;">Servicios</a>
@@ -69,24 +51,12 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="PetShop.jsp"style="font-family: 'Roboto', sans-serif;">Pet Shop</a>
                         </li>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-<<<<<<< HEAD
                        
-=======
-                        <li class="nav-item">
-                            <a class="text-reset  align-items-center nav-link  " data-bs-toggle="offcanvas"
-                               href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">
-                                <span class="text-white"style="font-family: 'Roboto', sans-serif;">Login </span>
-                            </a>
-                        </li>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                     </ul>
                 </div>
             </div>
         </nav>
-<<<<<<< HEAD
       <div class="sticky-container">
         <ul class="sticky">
             <li style="box-shadow: 10px 20px 20px blue; border-radius: 15px;background-color: blue">
@@ -110,179 +80,6 @@
         </ul>
     </div>
     <!<!-- REDES FIN -->
-=======
-
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-
-
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." >
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." />
-=======
-
-                        <li class="nav-item">
-                            <a class="text-reset  align-items-center nav-link  " data-bs-toggle="offcanvas"
-                               href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">
-                                <span class="text-white"style="font-family: 'Roboto', sans-serif;">Login </span>
-                            </a>
-                        </li>
-                    </ul>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-                </div>
-
-            </div>
-<<<<<<< HEAD
-=======
-
-                        <li class="nav-item">
-                            <a class="text-reset  align-items-center nav-link  " data-bs-toggle="offcanvas"
-                               href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom">
-                                <span class="text-white"style="font-family: 'Roboto', sans-serif;">Login </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." >
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/huellitas7.jpeg" class="d-block w-100 img-fluid" alt="..." />
-                </div>
-
-            </div>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="container-fluid bg-success p-3">
-            <h1 class="text-capitalize text-center text-white h2">NUESTRO EQUIPO</h1>
-        </div>
-
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
-
-                <div class="col">
-                    <div class="">
-                        <img src="img/doctora2.jpg" class="ms-5 m-auto" alt="..." height="450px">
-                        <div class="card-body">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="">
-<<<<<<< HEAD
-
-                        <div class="card-body ">
-                            <h5 class="card-title text-center h2 bg-warning  "><b>DRA. MILY TICCLLA ESPINOZA</b></h5>
-                            <h2 class="text-center h4">CMVP 4990</h2>
-                            <p class="">  Médico Veterinario egresado de la Universidad Nacional Mayor de San Marcos,
-                                br*2 líder de opinión en temas de Neurología, traumatología y Ortopedia Veterinaria, Diplomado de
-                                Traumatología y Ortopedia en CEAMVET-México y realizó una pasantía en la Clínica San Juan de
-                                Dios, 2007. Expositor de innumerables Congresos de Medicina Veterinaria y como Infuencer en
-                                temas relacionados a los animales y el medio ambiente. Condecorado en el 2011 por la UNMSM, por
-                                su contribución en el desarrollo de la Medicina Veterinaria en el Perú y Medalla Cívica de la
-                                orden Santiago de Apóstol en “Reconocimiento al desarrollo de técnicas y procedimientos
-                                innovadores en el ejercicio de la Medicina Veterinaria” por la Municipalidad de Santiago de
-                                Surco 2005
-
-                            </p>
-                            <a href="#" class="   ms-2" style="font-family: 'Roboto', sans-serif;color:darkblue;text-decoration: none">milyticclla@huellitas.com.pe</a>
-
-                            <div class="mt-2">
-                                <button class="btn text-white " style="background: #000;width: 150px;border-radius: 20px">
-                                    Leer Mas
-
-                                </button>
-                            </div>
-
-
-
-
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-
-                        <div class="card-body ">
-                            <h5 class="card-title text-center h2 bg-warning  "><b>DRA. MILY TICCLLA ESPINOZA</b></h5>
-                            <h2 class="text-center h4">CMVP 4990</h2>
-                            <p class="">  Médico Veterinario egresado de la Universidad Nacional Mayor de San Marcos,
-                                br*2 líder de opinión en temas de Neurología, traumatología y Ortopedia Veterinaria, Diplomado de
-                                Traumatología y Ortopedia en CEAMVET-México y realizó una pasantía en la Clínica San Juan de
-                                Dios, 2007. Expositor de innumerables Congresos de Medicina Veterinaria y como Infuencer en
-                                temas relacionados a los animales y el medio ambiente. Condecorado en el 2011 por la UNMSM, por
-                                su contribución en el desarrollo de la Medicina Veterinaria en el Perú y Medalla Cívica de la
-                                orden Santiago de Apóstol en “Reconocimiento al desarrollo de técnicas y procedimientos
-                                innovadores en el ejercicio de la Medicina Veterinaria” por la Municipalidad de Santiago de
-                                Surco 2005
-
-<<<<<<< HEAD
-=======
-                            </p>
-                            <a href="#" class="   ms-2" style="font-family: 'Roboto', sans-serif;color:darkblue;text-decoration: none">milyticclla@huellitas.com.pe</a>
-
-                            <div class="mt-2">
-                                <button class="btn text-white " style="background: #000;width: 150px;border-radius: 20px">
-                                    Leer Mas
-
-                                </button>
-                            </div>
-
-
-
-
-
-
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="">
-
-                        <div class="card-body mt-5">
-                            <h5 class="card-title mt-5 text-center h2 bg-warning"><b>DRA. FIORELLA COCHELLA</b></h5>
-                            <p class="card-text">
-                                Médico Veterinario y Socia Co-Fundadora,
-                                egresada de la Universidad Nacional Mayor de San Marcos 
-                                y Master en Administración de Negocios (MBA). Se desempeñó
-                                como Gerente de Línea en reconocidas empresas del medio veterinario
-                                por 12 años, adquiriendo amplia experiencia en el sector de animales de compañía y avicultura. </p>
-                            <a href="#" class="   ms-2" style="font-family: 'Roboto', sans-serif;color:darkblue;text-decoration: none">Fcochella@huellitas.com.pe</a>
-                            <div class="mt-2">
-                                <button class="btn text-white " style="background: #000;width: 150px;border-radius: 20px">
-                                    Leer Mas
-
-                                </button>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="">
-                        <img src="img/huellitas9.jpg" class="" alt="..." height="450px" width="auto" style="border-radius: 10px">
-<<<<<<< HEAD
-=======
-        </nav>
-
 
 
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -314,20 +111,13 @@
                 <div class="col">
                     <div class="">
                         <img src="img/doctora2.jpg" class="ms-5 m-auto" alt="..." height="450px">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                         <div class="card-body">
 
                         </div>
                     </div>
-<<<<<<< HEAD
                 </div>
-<<<<<<< HEAD
-=======
                 <div class="col ">
                     <div class="">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
                         <div class="card-body ">
                             <h5 class="card-title text-center h2 bg-warning  "><b>DRA. MILY TICCLLA ESPINOZA</b></h5>
@@ -342,14 +132,6 @@
                                 innovadores en el ejercicio de la Medicina Veterinaria” por la Municipalidad de Santiago de
                                 Surco 2005
 
-<<<<<<< HEAD
-                <div class="col img-diseño">
-                    <div class=" ">
-                        <img src="img/doctor.jpg" class="ms-5" alt="..." height="450px">
-
-                    </div>
-                </div>
-=======
                             </p>
                             <a href="#" class="   ms-2" style="font-family: 'Roboto', sans-serif;color:darkblue;text-decoration: none">milyticclla@huellitas.com.pe</a>
 
@@ -399,9 +181,6 @@
                         </div>
                     </div>
                 </div>
-=======
-                </div>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
 
 
                 <div class="col img-diseño">
@@ -410,10 +189,6 @@
 
                     </div>
                 </div>
-<<<<<<< HEAD
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <div class="col ">
                     <div class="">
 
@@ -460,27 +235,9 @@
             </div>
         </div>
         <br><br><br><br><br>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5" >
             <div id="bg-contactos" >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
-=======
-        <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5">
-            <div id="bg-contactos">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-        <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5">
-            <div id="bg-contactos">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
-=======
-        <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-5">
-            <div id="bg-contactos">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                 <path fill="#1b2a4e" fill-opacity="1"
                       d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
                 </path>
@@ -536,7 +293,6 @@
                             <i class="fab fa-facebook"> </i>
                         </a>
                     </li>
-<<<<<<< HEAD
                   <li class="nav-item -">
                         <a class="nav-link " style="font-family: 'Roboto', sans-serif;" href="#">Terminos y condiciones</a>
                     </li>
@@ -554,42 +310,16 @@
                     </li>
                     <li class="nav-item -">
                         <a class="nav-link "style="font-family: 'Roboto', sans-serif;" href="#">Creadores</a>
-=======
-                    <li class="nav-item -">
-                        <a class="nav-link h2 text" href="#">Terminos y condiciones</a>
-                    </li>
-                    <li class="nav-item -">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item -">
-                        <a class="nav-link" href="#">Politicas de Privacidad</a>
-                    </li>
-                    <li class="nav-item -">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item -">
-                        <a class="nav-link" href="#">Marcas</a>
-                    </li>
-                    <li class="nav-item -">
-                        <a class="nav-link" href="#">Creadores</a>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
                     </li>
 
                 </ul>
 
             </div>
         </div>
-<<<<<<< HEAD
         <div class="row d-flex justify-content-center align-items-center mt-2">
 
             <img src="img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;" alt="">
             <a class="text-center text-capitalize" style="font-family: 'Roboto', sans-serif;">libro de reclamaciones</a>
-=======
-        <div class="row d-flex justify-content-center align-items-center">
-
-            <img src="../Img/libro-de-reclamaciones.png" style="width: 90px; padding-bottom: 10px ;" alt="">
-            <p class="text-center text-capitalize">libro de reclamaciones</p>
->>>>>>> 61a41528ef3bb3357becfd0e1e05522ac6e96377
         </div>
     </nav>
     <!---->
