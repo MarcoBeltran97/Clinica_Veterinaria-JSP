@@ -23,3 +23,6 @@ Se agregan algunas validaciones para el producto según el cliente, y se agrega 
 
 7mo. Dia 09/10/2021:
 Suma de los precios según el cliente que compra y se completa el mantenimiento del cliente.
+
+8vo. Dia 18/10/2021:
+Se implementa el reporte para el cliente y su producto usando JasperReports.
