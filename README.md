@@ -26,3 +26,7 @@ Suma de los precios según el cliente que compra y se completa el mantenimiento 
 
 8vo. Dia 18/10/2021:
 Se implementa el reporte para el cliente y su producto usando JasperReports, se utilizó la version de iReport 5.5.0
+
+9no. Dia 20/10/2021:
+Se implementa la librería de JavaMail para el envío de correo electrónico, cuando el cliente nos desea contactar.
+Se utilizó el jar de JavaMail y también el jar de JavaBeans Activation Framework 1.1.1
