@@ -19,7 +19,7 @@
     String contrasenia = "Grupo2WEB/";
     String asunto = "NOS QUIEREN CONTACTAR";
 
-    String mensajeFinal = "La persona " + nombre + "\n" + "con numero de telefono " + telefono + "\n" + "correo " + email  + " se quiere poner en contacto con nosotros" + "\n" +"Su mensaje es: " + mensaje;
+    String mensajeFinal = "La persona " + nombre + "\n" + "con numero de telefono " + telefono + "\n" + "correo " + email  + "\n" + "Se quiere poner en contacto con nosotros." + "\n" +"Su mensaje es: " + mensaje;
 
     MimeMessage mail = new MimeMessage(sesion);
 
